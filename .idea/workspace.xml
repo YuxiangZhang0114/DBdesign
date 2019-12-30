@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/DeleteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/UpdateDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/config/SqlServerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/config/SqlServerHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/DbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/DBController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +168,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577608321094</updated>
       <workItem from="1577608324416" duration="610000" />
-      <workItem from="1577608993302" duration="21830000" />
+      <workItem from="1577608993302" duration="23354000" />
     </task>
     <servers />
   </component>
@@ -208,22 +204,22 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="634" y="304" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577664966386" />
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1577694489455">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1577698668063">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577694489455" />
-    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1577694489454">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577698668063" />
+    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1577698668062">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577694489454" />
-    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1577694489454">
+    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577698668062" />
+    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1577698668062">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577694489454" />
-    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1577694489455">
+    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577698668062" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1577698668063">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577694489455" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577698668063" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1577665981734">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>

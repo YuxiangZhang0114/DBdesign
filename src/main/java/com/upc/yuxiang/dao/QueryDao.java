@@ -4,11 +4,11 @@ import com.upc.yuxiang.config.SqlServerHelper;
 
 public class QueryDao {
     public static String getQuerycommodities(){
-        String str = "select Cid,Cname from managesysem.commodities";
+        String str = "select Cid,Cname from managesystem.commodities";
         return str;
     }
     public static String getQuerycommodities(String Cname){
-        String str = "select Cid,Cname from managesysem.commodities where Cname = " + Cname;
+        String str = "select Cid,Cname from managesystem.commodities where Cname = " + Cname;
         return str;
     }
 

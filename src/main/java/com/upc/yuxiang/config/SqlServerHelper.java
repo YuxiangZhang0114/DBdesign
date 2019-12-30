@@ -1,12 +1,11 @@
 package com.upc.yuxiang.config;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 
+import com.sun.tools.corba.se.idl.StringGen;
+import com.upc.yuxiang.controller.DBController;
 import com.upc.yuxiang.dao.*;
 
 public class SqlServerHelper {
@@ -46,9 +45,13 @@ public class SqlServerHelper {
 
     public static void main(String[] args) throws SQLException {
 //        String sql = "insert into managesystem.Commodities values(\'" + "啤酒" + "\', "+"1"+")";
-        System.out.println(QueryDao.getQuerycommodities());
-//       System.out.println(st.execute(sql));
-//        SqlServerHelper.st.executeUpdate(sql)
-
+//        String sql = QueryDao.getQuerycommodities();
+//        System.out.println(sql);
+//        ResultSet rs = st.executeQuery(sql);
+//        while(rs.next()){
+//            System.out.println(rs.getString("Cname"));
+//
+//        }
+        DBController.insertCommodity("冰红茶",1);
     }
 }
