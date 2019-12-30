@@ -16,4 +16,9 @@ public class Dao {
         String str = "insert into managesystem.Operations values ('out',%d,%d,SYSDATETIME(),%d,%d);";
         return String.format(str, OType, Cid, Onum, Wid);
     }
+    public static String getInsertInRecord(String OType, int Cid, int Onum,int Wid){
+        String str = "insert into managesystem.Operations values ('in',%d,%d,SYSDATETIME(),%d,%d);";
+        return String.format(str, OType, Cid, Onum, Wid);
+    }
+
 }
