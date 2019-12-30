@@ -2,7 +2,7 @@ package com.upc.yuxiang.dao;
 
 import sun.plugin2.ipc.windows.WindowsNamedPipe;
 
-public class Dao {
+public class InsertDao {
     public static String getInertCommodities(String cname, int domainId){
         String str  = "insert into managesystem.Commodities values(\'%s\', %d)";
 
@@ -20,5 +20,6 @@ public class Dao {
         String str = "insert into managesystem.Operations values ('in',%d,%d,SYSDATETIME(),%d,%d);";
         return String.format(str, OType, Cid, Onum, Wid);
     }
+
 
 }

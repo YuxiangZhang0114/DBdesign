@@ -5,6 +5,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+
+import com.upc.yuxiang.dao.*;
+
 public class SqlServerHelper {
     static String driverName="com.microsoft.sqlserver.jdbc.SQLServerDriver";//SQL数据库引擎
 
@@ -41,9 +45,9 @@ public class SqlServerHelper {
     }
 
     public static void main(String[] args) throws SQLException {
-        String sql = "insert into managesystem.Commodities values(\'" + "啤酒" + "\', "+"1"+")";
-        System.out.println(sql);
-        System.out.println(st.execute(sql));
+//        String sql = "insert into managesystem.Commodities values(\'" + "啤酒" + "\', "+"1"+")";
+        System.out.println(QueryDao.getQuerycommodities());
+//       System.out.println(st.execute(sql));
 //        SqlServerHelper.st.executeUpdate(sql)
 
     }

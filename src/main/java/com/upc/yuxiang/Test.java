@@ -3,7 +3,6 @@ package com.upc.yuxiang;
 
 
 import javax.swing.*;
-import com.upc.yuxiang.controller.DbController;
 
 
 public class Test {
