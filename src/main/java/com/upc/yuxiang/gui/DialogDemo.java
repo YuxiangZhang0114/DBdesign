@@ -1,3 +1,5 @@
+package com.upc.yuxiang.gui;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
