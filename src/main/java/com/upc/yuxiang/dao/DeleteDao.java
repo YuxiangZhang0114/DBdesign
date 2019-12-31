@@ -4,8 +4,7 @@ public class DeleteDao {
 
     /*
      * delate 操作
-     * TODO
-     *      删除仓库
+     *
      * */
     public static String deleteCommodity(String Cname) {
         String str = "delete from managesystem.commodities where Cname = '%s'";

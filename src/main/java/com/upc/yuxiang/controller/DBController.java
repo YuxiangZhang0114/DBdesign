@@ -7,7 +7,6 @@ import java.sql.SQLException;
 public class DBController {
     /*
     * Insert 操作
-    * TODO
     * */
     public static Boolean insertCommodity(String cname, int domainId) throws SQLException {
         SqlServerHelper.st.execute(InsertDao.getInertCommodities(cname, domainId));
