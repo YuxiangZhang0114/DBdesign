@@ -52,6 +52,6 @@ public class SqlServerHelper {
 //            System.out.println(rs.getString("Cname"));
 //
 //        }
-        DBController.insertCommodity("冰红茶",1);
+//        DBController.insertCommodity("冰红茶",1);
     }
 }

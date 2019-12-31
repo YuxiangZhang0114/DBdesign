@@ -3,6 +3,7 @@ package com.upc.yuxiang.dao;
 import com.upc.yuxiang.config.SqlServerHelper;
 
 public class QueryDao {
+
     public static String getQuerycommodities(){
         String str = "select Cid,Cname from managesystem.commodities";
         return str;
@@ -25,6 +26,9 @@ public class QueryDao {
         String str = "select Wid,Wname from managesystem.Warehouses where Wname = '%s'" ;
         return String.format(str, Wname);
     }
+//    public static String getQuertRecord(){
+//        return
+//    }
 
     public static void main(String[] args) {
         System.out.println(getQueryAdmins("admin"));

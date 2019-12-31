@@ -11,8 +11,8 @@ import java.sql.SQLException;
 
 
 public class Login extends JFrame {
-    public String userName = "d";
-    private String userPwd = "d";
+    public String userName = "";
+    private String userPwd = "";
     public Login(){
 
         setBounds(500,300,450,300);
