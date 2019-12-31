@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13/storage_v2/_src_/database/TestDB.sFwclQ/schema/managesystem.1K9STA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/config/SqlServerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/config/SqlServerHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,20 +82,31 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.upc.yuxiang.controller" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.upc.yuxiang" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SqlServerHelper">
+  <component name="RunManager" selected="Application.Demo">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Demo" />
+      <module name="dbdesign" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SqlServerHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_212" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -107,12 +122,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.Test" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="dbdesign" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="dbdesign" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.upc.yuxiang.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,8 +142,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
       <module name="dbdesign" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,13 +152,15 @@
     <list>
       <item itemvalue="Application.SqlServerHelper" />
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Test (1)" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.Demo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SqlServerHelper" />
-        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.SqlServerHelper" />
       </list>
     </recent_temporary>
   </component>
@@ -145,12 +169,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -168,7 +187,8 @@
       <option name="presentableId" value="Default" />
       <updated>1577608321094</updated>
       <workItem from="1577608324416" duration="610000" />
-      <workItem from="1577608993302" duration="23354000" />
+      <workItem from="1577608993302" duration="25573000" />
+      <workItem from="1577750377395" duration="1333000" />
     </task>
     <servers />
   </component>
@@ -196,30 +216,38 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="468" y="464" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577690840196" />
+    <state x="662" y="398" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577707737122">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="662" y="398" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1792.1017@0.23.1792.1017" timestamp="1577707737122" />
     <state x="662" y="419" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1577690842385">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="662" y="419" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1792.1017@0.23.1792.1017" timestamp="1577690842385" />
+    <state x="634" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577751549260">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="634" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577751549260" />
     <state x="634" y="304" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1577664966386">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="634" y="304" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577664966386" />
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1577698668063">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1577752078240">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577698668063" />
-    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1577698668062">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577752078240" />
+    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1577752078239">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577698668062" />
-    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1577698668062">
+    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577752078239" />
+    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1577752078238">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577698668062" />
-    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1577698668063">
+    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577752078238" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1577752078239">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577698668063" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577752078239" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1577665981734">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
@@ -228,10 +256,10 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="434" y="193" key="Maven.ArtifactSearchDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577613274857" />
-    <state x="384" y="113" key="SettingsEditor" timestamp="1577688305948">
+    <state x="384" y="113" key="SettingsEditor" timestamp="1577751773875">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state x="384" y="113" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1577688305948" />
+    <state x="384" y="113" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1577751773875" />
     <state x="679" y="316" key="chooseDestDirectoryDialog" timestamp="1577608881713">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
