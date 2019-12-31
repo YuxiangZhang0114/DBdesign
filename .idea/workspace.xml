@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/LoginContrller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/FormGuiDemo.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/FormGuiDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/DBController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/DBController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/LoginContrller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/LoginContrller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/DeleteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/DeleteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -97,17 +96,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QueryDao">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.Demo" />
+  <component name="RunManager" selected="Application.DeleteDao">
+    <configuration name="DeleteDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.dao.DeleteDao" />
       <module name="dbdesign" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DialogDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.DialogDemo" />
-      <module name="dbdesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upc.yuxiang.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,6 +129,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.upc.yuxiang.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginContrller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.controller.LoginContrller" />
+      <module name="dbdesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upc.yuxiang.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,19 +176,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Demo" />
-      <item itemvalue="Application.DialogDemo" />
       <item itemvalue="Application.JLabelDemo" />
       <item itemvalue="Application.Login" />
       <item itemvalue="Application.QueryDao" />
+      <item itemvalue="Application.LoginContrller" />
+      <item itemvalue="Application.DeleteDao" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QueryDao" />
+        <item itemvalue="Application.DeleteDao" />
         <item itemvalue="Application.Login" />
+        <item itemvalue="Application.LoginContrller" />
+        <item itemvalue="Application.QueryDao" />
         <item itemvalue="Application.JLabelDemo" />
-        <item itemvalue="Application.DialogDemo" />
-        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +205,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@1e7a0692" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@13387666" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -216,7 +227,7 @@
       <workItem from="1577608324416" duration="610000" />
       <workItem from="1577608993302" duration="25573000" />
       <workItem from="1577750377395" duration="5119000" />
-      <workItem from="1577755875575" duration="2928000" />
+      <workItem from="1577755875575" duration="7636000" />
     </task>
     <task id="LOCAL-00001" summary="some new gui demo">
       <created>1577756604076</created>
@@ -276,22 +287,22 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="339" y="132" key="CommitChangelistDialog2/0.23.1792.1017@0.23.1792.1017" timestamp="1577756603783" />
-    <state width="875" height="276" key="GridCell.Tab.0.bottom" timestamp="1577759180950">
+    <state width="614" height="276" key="GridCell.Tab.0.bottom" timestamp="1577771968332">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577759180950" />
-    <state width="875" height="276" key="GridCell.Tab.0.center" timestamp="1577759180949">
+    <state width="614" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577771968332" />
+    <state width="614" height="276" key="GridCell.Tab.0.center" timestamp="1577771968331">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577759180949" />
-    <state width="875" height="276" key="GridCell.Tab.0.left" timestamp="1577759180948">
+    <state width="614" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577771968331" />
+    <state width="614" height="276" key="GridCell.Tab.0.left" timestamp="1577771968331">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577759180948" />
-    <state width="875" height="276" key="GridCell.Tab.0.right" timestamp="1577759180949">
+    <state width="614" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577771968331" />
+    <state width="614" height="276" key="GridCell.Tab.0.right" timestamp="1577771968332">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577759180949" />
+    <state width="614" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577771968332" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1577665981734">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
@@ -300,10 +311,10 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="434" y="193" key="Maven.ArtifactSearchDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577613274857" />
-    <state x="384" y="113" key="SettingsEditor" timestamp="1577751773875">
+    <state x="384" y="113" key="SettingsEditor" timestamp="1577760651909">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state x="384" y="113" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1577751773875" />
+    <state x="384" y="113" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1577760651909" />
     <state x="679" y="316" key="chooseDestDirectoryDialog" timestamp="1577608881713">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>

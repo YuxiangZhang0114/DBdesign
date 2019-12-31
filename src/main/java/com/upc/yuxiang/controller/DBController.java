@@ -25,11 +25,7 @@ public class DBController {
         SqlServerHelper.st.execute(InsertDao.getInsertInRecord(OType, Cid, Onum, Wid));
         return true;
     }
-    /*
-    * delate 操作
-    * TODO 删除商品
-    *      删除仓库
-    * */
+
 
 
     /*
