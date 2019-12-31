@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Demo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/JLabelDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/LoginContrller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/FormGuiDemo.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/FormGuiDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DialogDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/DialogDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JLabelDemo">
+  <component name="RunManager" selected="Application.QueryDao">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.Demo" />
       <module name="dbdesign" />
@@ -124,9 +125,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.Login" />
       <module name="dbdesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upc.yuxiang.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.dao.QueryDao" />
+      <module name="dbdesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upc.yuxiang.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,27 +164,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="dbdesign" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.test" />
       <item itemvalue="Application.Demo" />
       <item itemvalue="Application.DialogDemo" />
       <item itemvalue="Application.JLabelDemo" />
+      <item itemvalue="Application.Login" />
+      <item itemvalue="Application.QueryDao" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueryDao" />
+        <item itemvalue="Application.Login" />
         <item itemvalue="Application.JLabelDemo" />
         <item itemvalue="Application.DialogDemo" />
         <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +186,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1e7a0692" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -193,22 +216,34 @@
       <workItem from="1577608324416" duration="610000" />
       <workItem from="1577608993302" duration="25573000" />
       <workItem from="1577750377395" duration="5119000" />
-      <workItem from="1577755875575" duration="678000" />
+      <workItem from="1577755875575" duration="2928000" />
     </task>
+    <task id="LOCAL-00001" summary="some new gui demo">
+      <created>1577756604076</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577756604076</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some new gui demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="some new gui demo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="197" key="#Project_Structure" timestamp="1577608336551">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="496" y="197" key="#Project_Structure/0.23.1792.1017@0.23.1792.1017" timestamp="1577608336551" />
-    <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577665222812">
+    <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577758697282">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577665222812" />
+    <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577758697282" />
     <state x="633" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577610904992">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
@@ -237,22 +272,26 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="634" y="304" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577664966386" />
-    <state width="875" height="276" key="GridCell.Tab.0.bottom" timestamp="1577756578847">
+    <state x="339" y="132" key="CommitChangelistDialog2" timestamp="1577756603783">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577756578847" />
-    <state width="875" height="276" key="GridCell.Tab.0.center" timestamp="1577756578846">
+    <state x="339" y="132" key="CommitChangelistDialog2/0.23.1792.1017@0.23.1792.1017" timestamp="1577756603783" />
+    <state width="875" height="276" key="GridCell.Tab.0.bottom" timestamp="1577759180950">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577756578846" />
-    <state width="875" height="276" key="GridCell.Tab.0.left" timestamp="1577756578845">
+    <state width="875" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577759180950" />
+    <state width="875" height="276" key="GridCell.Tab.0.center" timestamp="1577759180949">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577756578845" />
-    <state width="875" height="276" key="GridCell.Tab.0.right" timestamp="1577756578846">
+    <state width="875" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577759180949" />
+    <state width="875" height="276" key="GridCell.Tab.0.left" timestamp="1577759180948">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577756578846" />
+    <state width="875" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577759180948" />
+    <state width="875" height="276" key="GridCell.Tab.0.right" timestamp="1577759180949">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="875" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577759180949" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1577665981734">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>

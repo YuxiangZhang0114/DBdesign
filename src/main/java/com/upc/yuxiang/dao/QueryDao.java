@@ -8,23 +8,25 @@ public class QueryDao {
         return str;
     }
     public static String getQuerycommodities(String Cname){
-        String str = "select Cid,Cname from managesystem.commodities where Cname = " + Cname;
-        return str;
+        String str = "select Cid,Cname from managesystem.commodities where Cname = '%s' ";
+        return String.format(str, Cname);
     }
 
-    public static String getQueryAdmins(){
-        String str = "select Cid,Cname from managesystem.Person";
-        return str;
+    public static String getQueryAdmins(String userName){
+        String str = "select Pname,pwd from managesystem.Persons where Pname = '%s' ";
+        return String.format(str, userName);
     }
 
     public static String getQueryWarehouses(){
-        String str = "select Cid,Cname from managesystem.Warehouses";
+        String str = "select Wid,Wname from managesystem.Warehouses";
         return str;
     }
     public static String getQueryWarehouses(String Wname){
-        String str = "select Cid,Cname from managesystem.Warehouses where Wname = " +Wname;
-        return str;
+        String str = "select Wid,Wname from managesystem.Warehouses where Wname = '%s'" ;
+        return String.format(str, Wname);
     }
 
-
+    public static void main(String[] args) {
+        System.out.println(getQueryAdmins("admin"));
+    }
 }
