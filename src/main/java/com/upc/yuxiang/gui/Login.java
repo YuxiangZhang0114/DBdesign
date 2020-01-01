@@ -73,8 +73,8 @@ public class Login extends JFrame {
                 userPwd = passwordField_pwd.getText();
                 try {
                     if (LoginContrller.checkLogin(userName,userPwd)){
-                        JOptionPane.showMessageDialog(null,"登陆成功");
-
+                        //JOptionPane.showMessageDialog(null,"登陆成功");
+                        new ManageGui(userName);
                     }else{
                         JOptionPane.showMessageDialog(null,"登陆失败");
                     }

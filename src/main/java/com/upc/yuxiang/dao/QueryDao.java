@@ -26,10 +26,11 @@ public class QueryDao {
         String str = "select Wid,Wname from managesystem.Warehouses where Wname = '%s'" ;
         return String.format(str, Wname);
     }
-//    public static String getQuertRecord(){
-//        return
-//    }
-
+    public static String getQuertCommoditiesWithDomain(){
+        String str = "select * from managesystem.Commodities x, managesystem.Domains y where x.Did = y.Did ";
+        return str;
+    }
+//    public static
     public static void main(String[] args) {
         System.out.println(getQueryAdmins("admin"));
     }

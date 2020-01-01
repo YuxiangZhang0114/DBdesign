@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/ComoditiesListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/OperationsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/config/SqlServerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/config/SqlServerHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,13 +99,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Login">
-    <configuration name="DeleteDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.dao.DeleteDao" />
+  <component name="RunManager" selected="Application.CommoditiesList">
+    <configuration name="CommoditiesList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.CommoditiesList" />
       <module name="dbdesign" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.upc.yuxiang.dao.*" />
+          <option name="PATTERN" value="com.upc.yuxiang.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JLabelDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.JLabelDemo" />
+    <configuration name="DeleteDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.dao.DeleteDao" />
       <module name="dbdesign" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.upc.yuxiang.gui.*" />
+          <option name="PATTERN" value="com.upc.yuxiang.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginContrller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.controller.LoginContrller" />
+    <configuration name="ManageGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.ManageGui" />
       <module name="dbdesign" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.upc.yuxiang.controller.*" />
+          <option name="PATTERN" value="com.upc.yuxiang.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +152,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QueryDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.dao.QueryDao" />
+    <configuration name="SqlServerHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.config.SqlServerHelper" />
       <module name="dbdesign" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.upc.yuxiang.dao.*" />
+          <option name="PATTERN" value="com.upc.yuxiang.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,19 +179,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JLabelDemo" />
       <item itemvalue="Application.Login" />
-      <item itemvalue="Application.QueryDao" />
-      <item itemvalue="Application.LoginContrller" />
       <item itemvalue="Application.DeleteDao" />
+      <item itemvalue="Application.ManageGui" />
+      <item itemvalue="Application.SqlServerHelper" />
+      <item itemvalue="Application.CommoditiesList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CommoditiesList" />
         <item itemvalue="Application.Login" />
+        <item itemvalue="Application.SqlServerHelper" />
+        <item itemvalue="Application.ManageGui" />
         <item itemvalue="Application.DeleteDao" />
-        <item itemvalue="Application.LoginContrller" />
-        <item itemvalue="Application.QueryDao" />
-        <item itemvalue="Application.JLabelDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +230,7 @@
       <workItem from="1577608324416" duration="610000" />
       <workItem from="1577608993302" duration="25573000" />
       <workItem from="1577750377395" duration="5119000" />
-      <workItem from="1577755875575" duration="12377000" />
+      <workItem from="1577755875575" duration="20959000" />
     </task>
     <task id="LOCAL-00001" summary="some new gui demo">
       <created>1577756604076</created>
@@ -253,10 +258,10 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577758697282" />
-    <state x="709" y="254" key="#com.intellij.ide.util.MemberChooser" timestamp="1577772833742">
+    <state x="709" y="254" key="#com.intellij.ide.util.MemberChooser" timestamp="1577782171101">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state x="709" y="254" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1017@0.23.1792.1017" timestamp="1577772833742" />
+    <state x="709" y="254" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1017@0.23.1792.1017" timestamp="1577782171101" />
     <state x="633" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577610904992">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
@@ -289,22 +294,22 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="339" y="132" key="CommitChangelistDialog2/0.23.1792.1017@0.23.1792.1017" timestamp="1577756603783" />
-    <state width="875" height="276" key="GridCell.Tab.0.bottom" timestamp="1577777457900">
+    <state width="875" height="276" key="GridCell.Tab.0.bottom" timestamp="1577877303201">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577777457900" />
-    <state width="875" height="276" key="GridCell.Tab.0.center" timestamp="1577777457900">
+    <state width="875" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577877303201" />
+    <state width="875" height="276" key="GridCell.Tab.0.center" timestamp="1577877303199">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577777457900" />
-    <state width="875" height="276" key="GridCell.Tab.0.left" timestamp="1577777457899">
+    <state width="875" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577877303199" />
+    <state width="875" height="276" key="GridCell.Tab.0.left" timestamp="1577877303198">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577777457899" />
-    <state width="875" height="276" key="GridCell.Tab.0.right" timestamp="1577777457900">
+    <state width="875" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577877303198" />
+    <state width="875" height="276" key="GridCell.Tab.0.right" timestamp="1577877303200">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577777457900" />
+    <state width="875" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577877303200" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1577665981734">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
@@ -349,5 +354,9 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="561" y="246" width="670" height="675" key="run.anything.popup/0.23.1792.1017@0.23.1792.1017" timestamp="1577664334171" />
+    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup" timestamp="1577878225580">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1792.1017@0.23.1792.1017" timestamp="1577878225580" />
   </component>
 </project>
