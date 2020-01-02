@@ -237,6 +237,12 @@ public class CommoditiesList extends JFrame {
             }
         });
 
+        btn_sell.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new SellUI(new Point(getLocation().x+getWidth()+1,getLocation().y),new Dimension(400,getHeight()),username);
+
+            }
+        });
 
         //end 监听器
         setVisible(true);

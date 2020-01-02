@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class ManageGui extends JFrame {
 
     ManageGui(final String username){
-        setBounds(450,300,800,600);
+        setBounds(440,290,800,600);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setTitle("商店进销存管理系统");
         Container c = getContentPane();
@@ -42,6 +42,18 @@ public class ManageGui extends JFrame {
         btn_in.setBounds(550,70,130,45);
         c.add(btn_in);
 
+
+        //label
+
+        JLabel label_username1 = new JLabel("当前用户：");
+        label_username1.setBounds(690,20,90,35);
+        c.add(label_username1);
+
+        JLabel label_username2 = new JLabel(username);
+        label_username2.setBounds(700,60,90,35);
+
+        c.add(label_username2);
+        //end label
 
         //end 按钮
         //listeners
@@ -91,6 +103,19 @@ public class ManageGui extends JFrame {
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
+            }
+        });
+
+        btn_sell.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new SellUI(new Point(getLocation().x+getWidth()+1,getLocation().y),new Dimension(450,getHeight()),username);
+
+            }
+        });
+
+        btn_in.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
 

@@ -15,7 +15,7 @@ public class QueryDao {
     }
 
     public static String getQueryAdmins(String userName){
-        String str = "select Pname,pwd from managesystem.Persons where Pname = '%s' ";
+        String str = "select Pid,Pname,pwd from managesystem.Persons where Pname = '%s' ";
         return String.format(str, userName);
     }
     public static String getQueryDomains(){
