@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/ComoditiesListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/OperationsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/config/SqlServerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/config/SqlServerHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +95,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CommoditiesList">
+  <component name="RunManager" selected="Application.ManageGui">
     <configuration name="CommoditiesList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.CommoditiesList" />
       <module name="dbdesign" />
@@ -187,10 +183,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ManageGui" />
         <item itemvalue="Application.CommoditiesList" />
         <item itemvalue="Application.Login" />
         <item itemvalue="Application.SqlServerHelper" />
-        <item itemvalue="Application.ManageGui" />
         <item itemvalue="Application.DeleteDao" />
       </list>
     </recent_temporary>
@@ -230,7 +226,7 @@
       <workItem from="1577608324416" duration="610000" />
       <workItem from="1577608993302" duration="25573000" />
       <workItem from="1577750377395" duration="5119000" />
-      <workItem from="1577755875575" duration="20959000" />
+      <workItem from="1577755875575" duration="29535000" />
     </task>
     <task id="LOCAL-00001" summary="some new gui demo">
       <created>1577756604076</created>
@@ -294,22 +290,38 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="339" y="132" key="CommitChangelistDialog2/0.23.1792.1017@0.23.1792.1017" timestamp="1577756603783" />
-    <state width="875" height="276" key="GridCell.Tab.0.bottom" timestamp="1577877303201">
+    <state width="875" height="341" key="GridCell.Tab.0.bottom" timestamp="1577932007634">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577877303201" />
-    <state width="875" height="276" key="GridCell.Tab.0.center" timestamp="1577877303199">
+    <state width="875" height="341" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007634" />
+    <state width="875" height="341" key="GridCell.Tab.0.center" timestamp="1577932007634">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577877303199" />
-    <state width="875" height="276" key="GridCell.Tab.0.left" timestamp="1577877303198">
+    <state width="875" height="341" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007634" />
+    <state width="875" height="341" key="GridCell.Tab.0.left" timestamp="1577932007633">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577877303198" />
-    <state width="875" height="276" key="GridCell.Tab.0.right" timestamp="1577877303200">
+    <state width="875" height="341" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007633" />
+    <state width="875" height="341" key="GridCell.Tab.0.right" timestamp="1577932007634">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577877303200" />
+    <state width="875" height="341" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007634" />
+    <state width="875" height="341" key="GridCell.Tab.1.bottom" timestamp="1577932007636">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="875" height="341" key="GridCell.Tab.1.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007636" />
+    <state width="875" height="341" key="GridCell.Tab.1.center" timestamp="1577932007636">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="875" height="341" key="GridCell.Tab.1.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007636" />
+    <state width="875" height="341" key="GridCell.Tab.1.left" timestamp="1577932007635">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="875" height="341" key="GridCell.Tab.1.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007635" />
+    <state width="875" height="341" key="GridCell.Tab.1.right" timestamp="1577932007636">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="875" height="341" key="GridCell.Tab.1.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007636" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1577665981734">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>

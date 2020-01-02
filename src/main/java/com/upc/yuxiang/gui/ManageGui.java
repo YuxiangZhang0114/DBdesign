@@ -4,25 +4,47 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 public class ManageGui extends JFrame {
 
     ManageGui(String userName){
-        setBounds(500,300,690,460);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setBounds(450,300,800,600);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setTitle("商店进销存管理系统");
         Container c = getContentPane();
         c.setLayout(null);
-        JButton btn_queryCommoditie = new JButton("查询库存");
-        btn_queryCommoditie.setBounds(50,50,100,30);
 
-        c.add(btn_queryCommoditie);
+        //按钮
+
+        JButton btn_queryCommodities = new JButton("查询库存");
+        btn_queryCommodities.setBounds(30,20,100,30);
+        c.add(btn_queryCommodities);
+
+        JButton btn_queryWarehouse = new JButton("查询仓库");
+        btn_queryWarehouse.setBounds(150,20,100,30);
+        c.add(btn_queryWarehouse);
+
+        JButton btn_inOperation = new JButton("商品入库");
+        btn_inOperation.setBounds(270,20,100,30);
+        c.add(btn_inOperation);
+
+        JButton btn_sellOperation = new JButton("商品销售");
+        btn_sellOperation.setBounds(390,20,100,30);
+        c.add(btn_sellOperation);
 
 
+        //end 按钮
         //listeners
-        btn_queryCommoditie.addActionListener(new ActionListener() {
+        btn_queryCommodities.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                new CommoditiesList();
+                try {
+                    new CommoditiesList(getLocation(),getSize());
+                    setVisible(false);
+//                    dispose();
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 
