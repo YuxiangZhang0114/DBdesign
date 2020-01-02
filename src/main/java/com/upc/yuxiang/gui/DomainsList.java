@@ -189,7 +189,11 @@ public class DomainsList extends JFrame {
         btn_deleteDomain.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String sql = DeleteDao.deleteDomain(textField_dname.getText());
-                SqlServerHelper.st.execute(sql);
+                try {
+                    SqlServerHelper.st.execute(sql);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 
