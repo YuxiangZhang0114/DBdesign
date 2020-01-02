@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class ManageGui extends JFrame {
 
-    ManageGui(String userName){
+    ManageGui(final String username){
         setBounds(450,300,800,600);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setTitle("商店进销存管理系统");
@@ -17,7 +17,7 @@ public class ManageGui extends JFrame {
 
         //按钮
 
-        JButton btn_queryCommodities = new JButton("查询库存");
+        JButton btn_queryCommodities = new JButton("查询商品");
         btn_queryCommodities.setBounds(30,20,100,30);
         c.add(btn_queryCommodities);
 
@@ -25,21 +25,20 @@ public class ManageGui extends JFrame {
         btn_queryWarehouse.setBounds(150,20,100,30);
         c.add(btn_queryWarehouse);
 
-        JButton btn_inOperation = new JButton("商品入库");
+        JButton btn_inOperation = new JButton("商品种类");
         btn_inOperation.setBounds(270,20,100,30);
         c.add(btn_inOperation);
 
-        JButton btn_sellOperation = new JButton("商品销售");
+        JButton btn_sellOperation = new JButton("查询记录");
         btn_sellOperation.setBounds(390,20,100,30);
         c.add(btn_sellOperation);
-
 
         //end 按钮
         //listeners
         btn_queryCommodities.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
-                    new CommoditiesList(getLocation(),getSize());
+                    new CommoditiesList(getLocation(),getSize(),username);
                     setVisible(false);
 //                    dispose();
                 } catch (SQLException ex) {
@@ -48,6 +47,17 @@ public class ManageGui extends JFrame {
             }
         });
 
+        btn_queryWarehouse.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new WarehouseList(getLocation(),getSize(),username);
+                    setVisible(false);
+
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
         setVisible(true);
 
     }

@@ -14,28 +14,26 @@ import java.sql.SQLException;
 import java.util.Enumeration;
 import java.util.Vector;
 
-public class CommoditiesList extends JFrame {
+public class WarehouseList extends JFrame {
 
 
     class Row{
-        String cid;
-        String cname;
-        String dname;
+        String wid;
+        String wname;
 
     }
     Vector<Row> data;
 
     Vector<Row> getData() throws SQLException {
         Vector<Row> v = new Vector<Row>();
-        String sql = QueryDao.getQuertCommoditiesWithDomain();
+        String sql = QueryDao.getQueryWarehouses();
 
         ResultSet rs = SqlServerHelper.st.executeQuery(sql);
 
         while(rs.next()){
             Row tmp = new Row();
-            tmp.cid = rs.getString("cid");
-            tmp.cname = rs.getString("cname");
-            tmp.dname =rs.getString("dname");
+            tmp.wid = rs.getString("Wid");
+            tmp.wname = rs.getString("Wname");
             v.add(tmp);
         }
 
@@ -43,20 +41,19 @@ public class CommoditiesList extends JFrame {
 
         return v;
     }
-    public CommoditiesList(Point loaction, Dimension dim, final String username) throws SQLException {
+    public WarehouseList(Point loaction, Dimension dim, final String username) throws SQLException {
         setLayout(null);
         setTitle("商店进销存管理系统");
 
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         String[] columnNames =
-                { "商品编号", "商品名称", "商品类别" };
+                { "仓库编号", "仓库名" };
         Vector<Row> data = getData();
-        String[][] dataArray = new String[data.size()][3];
+        String[][] dataArray = new String[data.size()][2];
 
         for(int i=0;i<data.size();i++){
-            dataArray[i][0] = data.get(i).cid;
-            dataArray[i][1] = data.get(i).cname;
-            dataArray[i][2] = data.get(i).dname;
+            dataArray[i][0] = data.get(i).wid;
+            dataArray[i][1] = data.get(i).wname;
         }
 
 
@@ -76,7 +73,6 @@ public class CommoditiesList extends JFrame {
         Container c = getContentPane();
 
         //按钮
-
         JButton btn_queryCommodities = new JButton("查询商品");
         btn_queryCommodities.setBounds(30,20,100,30);
         c.add(btn_queryCommodities);
@@ -92,8 +88,6 @@ public class CommoditiesList extends JFrame {
         JButton btn_sellOperation = new JButton("查询记录");
         btn_sellOperation.setBounds(390,20,100,30);
         c.add(btn_sellOperation);
-
-
 
         //end 按钮
         c.add(jscrollpane);
@@ -123,6 +117,7 @@ public class CommoditiesList extends JFrame {
                 }
             }
         });
+
 
         //end 监听器
         setVisible(true);

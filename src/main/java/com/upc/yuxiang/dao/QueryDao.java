@@ -30,6 +30,7 @@ public class QueryDao {
         String str = "select x.Cid Cid, x.Cname Cname, y.Dname Dname from managesystem.Commodities x, managesystem.Domains y where x.Did = y.Did ";
         return str;
     }
+
 //    public static
     public static void main(String[] args) {
         System.out.println(getQueryAdmins("admin"));
