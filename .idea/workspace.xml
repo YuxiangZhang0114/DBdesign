@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="some new gui demo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/OperationsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13/storage_v2/_src_/database/TestDB.sFwclQ/schema/managesystem.1K9STA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13/storage_v2/_src_/database/TestDB.sFwclQ/schema/managesystem.1K9STA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/DeleteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/DeleteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/DomainsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/DomainsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/OperationsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/OperationsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/WarehouseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/WarehouseList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +211,16 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@62f9545d" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5e8237ee" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@13387666" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
@@ -228,7 +243,7 @@
       <workItem from="1577608324416" duration="610000" />
       <workItem from="1577608993302" duration="25573000" />
       <workItem from="1577750377395" duration="5119000" />
-      <workItem from="1577755875575" duration="33402000" />
+      <workItem from="1577755875575" duration="46741000" />
     </task>
     <task id="LOCAL-00001" summary="some new gui demo">
       <created>1577756604076</created>
@@ -299,46 +314,46 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="339" y="132" key="CommitChangelistDialog2/0.23.1792.1017@0.23.1792.1017" timestamp="1577935320974" />
-    <state width="875" height="276" key="GridCell.Tab.0.bottom" timestamp="1577935869120">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1577956085322">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577935869120" />
-    <state width="875" height="276" key="GridCell.Tab.0.center" timestamp="1577935869119">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577956085322" />
+    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1577956085320">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577935869119" />
-    <state width="875" height="276" key="GridCell.Tab.0.left" timestamp="1577935869119">
+    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577956085320" />
+    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1577956085320">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577935869119" />
-    <state width="875" height="276" key="GridCell.Tab.0.right" timestamp="1577935869120">
+    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577956085320" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1577956085321">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577935869120" />
-    <state width="875" height="341" key="GridCell.Tab.1.bottom" timestamp="1577932007636">
+    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577956085321" />
+    <state width="1750" height="341" key="GridCell.Tab.1.bottom" timestamp="1577954489522">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="341" key="GridCell.Tab.1.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007636" />
-    <state width="875" height="341" key="GridCell.Tab.1.center" timestamp="1577932007636">
+    <state width="1750" height="341" key="GridCell.Tab.1.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577954489522" />
+    <state width="1750" height="341" key="GridCell.Tab.1.center" timestamp="1577954489522">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="341" key="GridCell.Tab.1.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007636" />
-    <state width="875" height="341" key="GridCell.Tab.1.left" timestamp="1577932007635">
+    <state width="1750" height="341" key="GridCell.Tab.1.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577954489522" />
+    <state width="1750" height="341" key="GridCell.Tab.1.left" timestamp="1577954489522">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="341" key="GridCell.Tab.1.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007635" />
-    <state width="875" height="341" key="GridCell.Tab.1.right" timestamp="1577932007636">
+    <state width="1750" height="341" key="GridCell.Tab.1.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577954489522" />
+    <state width="1750" height="341" key="GridCell.Tab.1.right" timestamp="1577954489522">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="875" height="341" key="GridCell.Tab.1.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577932007636" />
+    <state width="1750" height="341" key="GridCell.Tab.1.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577954489522" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1577665981734">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state width="239" height="457" key="HiddenNamespacesPopup/0.23.1792.1017@0.23.1792.1017" timestamp="1577665981734" />
-    <state x="434" y="193" key="Maven.ArtifactSearchDialog" timestamp="1577613274857">
+    <state x="434" y="193" key="Maven.ArtifactSearchDialog" timestamp="1577953420267">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state x="434" y="193" key="Maven.ArtifactSearchDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577613274857" />
+    <state x="434" y="193" key="Maven.ArtifactSearchDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577953420267" />
     <state x="384" y="113" key="SettingsEditor" timestamp="1577760651909">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
@@ -363,14 +378,18 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="662" y="360" width="467" height="338" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577667832843" />
-    <state x="632" y="222" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1577934773395">
+    <state x="632" y="222" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1577954987117">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state x="632" y="222" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577934773395" />
+    <state x="632" y="222" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577954987117" />
     <state x="654" y="265" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577688325849">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="654" y="265" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577688325849" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1577948929283">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.23.1792.1017@0.23.1792.1017" timestamp="1577948929283" />
     <state x="561" y="246" width="670" height="675" key="run.anything.popup" timestamp="1577664334171">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>

@@ -26,13 +26,13 @@ public class ManageGui extends JFrame {
         c.add(btn_queryWarehouse);
 
 
-        JButton btn_queryrecord = new JButton("商品种类");
-        btn_queryrecord.setBounds(270,20,100,30);
-        c.add(btn_queryrecord);
+        JButton btn_queryDomains = new JButton("商品种类");
+        btn_queryDomains.setBounds(270,20,100,30);
+        c.add(btn_queryDomains);
 
-        JButton btn_sellOperation = new JButton("查询记录");
-        btn_sellOperation.setBounds(390,20,100,30);
-        c.add(btn_sellOperation);
+        JButton btn_queryrecord = new JButton("查询记录");
+        btn_queryrecord.setBounds(390,20,100,30);
+        c.add(btn_queryrecord);
 
         //end 按钮
         //listeners
@@ -61,7 +61,7 @@ public class ManageGui extends JFrame {
         });
 
 
-        btn_queryrecord.addActionListener(new ActionListener() {
+        btn_queryDomains.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
                     new DomainsList(getLocation(),getSize(),username);
@@ -77,10 +77,11 @@ public class ManageGui extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try {
                     new OperationsList(getLocation(),getSize(),username);
+                    setVisible(false);
+
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
-                dispose();
             }
         });
 

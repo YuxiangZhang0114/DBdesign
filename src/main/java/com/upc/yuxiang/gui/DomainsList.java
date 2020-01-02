@@ -1,7 +1,10 @@
 package com.upc.yuxiang.gui;
 
 import com.upc.yuxiang.config.SqlServerHelper;
+import com.upc.yuxiang.dao.DeleteDao;
+import com.upc.yuxiang.dao.InsertDao;
 import com.upc.yuxiang.dao.QueryDao;
+import javafx.scene.chart.Axis;
 
 import javax.swing.*;
 import javax.swing.table.JTableHeader;
@@ -89,11 +92,32 @@ public class DomainsList extends JFrame {
         btn_queryrecord.setBounds(390,20,100,30);
         c.add(btn_queryrecord);
 
+
+
+        JButton btn_querytDomain = new JButton("查询");
+        btn_querytDomain.setBounds(30,120,100,30);
+        c.add(btn_querytDomain);
+
+        JButton btn_insertDomain = new JButton("插入");
+        btn_insertDomain.setBounds(150,120,100,30);
+        c.add(btn_insertDomain);
+
+        JButton btn_deleteDomain = new JButton("删除");
+        btn_deleteDomain.setBounds(270,120,100,30);
+        c.add(btn_deleteDomain);
         //end 按钮
         c.add(jscrollpane);
 
+        //textField
+
+        final JTextField textField_dname = new JTextField();
+        textField_dname.setBounds(30,80,150,38);
+        c.add(textField_dname);
+
+        //endTextfield
 
         //监听器
+
         btn_queryCommodities.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -118,6 +142,7 @@ public class DomainsList extends JFrame {
             }
         });
 
+
         btn_queryDomains.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -129,6 +154,45 @@ public class DomainsList extends JFrame {
 
             }
         });
+
+        btn_queryrecord.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new OperationsList(getLocation(),getSize(),username);
+                    setVisible(false);
+
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+
+
+        btn_querytDomain.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        btn_insertDomain.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String sql = InsertDao.getInsertDomains(textField_dname.getText());
+                try {
+                    SqlServerHelper.st.execute(sql);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        btn_deleteDomain.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String sql = DeleteDao.deleteDomain(textField_dname.getText());
+                SqlServerHelper.st.execute(sql);
+            }
+        });
+
 
 
         //end 监听器

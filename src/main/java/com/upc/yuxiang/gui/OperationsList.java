@@ -15,24 +15,43 @@ public class OperationsList extends JFrame {
 
 
     class Row{
+        String onum;
+        String otype;
         String cid;
         String cname;
         String dname;
-
+        String wname;
+        String date;
+        String pname;
     }
     Vector<Row> data;
 
     Vector<Row> getData() throws SQLException {
         Vector<Row> v = new Vector<Row>();
-        String sql = QueryDao.getQueryCommoditiesWithDomain();
+        String sql = QueryDao.getQueryRecords();
 
         ResultSet rs = SqlServerHelper.st.executeQuery(sql);
 
         while(rs.next()){
             Row tmp = new Row();
+            tmp.onum = rs.getString("onum");
             tmp.cid = rs.getString("cid");
             tmp.cname = rs.getString("cname");
             tmp.dname =rs.getString("dname");
+            String otype = rs.getString("OType");
+            if(otype.equals("in")){
+                tmp.otype = "入库";
+            }else if(otype.equals("out")){
+                tmp.otype = "出库";
+            }else if(otype.equals("selled")){
+                tmp.otype = "售出";
+            }else {
+                tmp.otype = "其他";
+            }
+            tmp.dname = rs.getString("Dname");
+            tmp.wname = rs.getString("Wname");
+            tmp.pname = rs.getString("Pname");
+            tmp.date = rs.getDate("Date").toString();//TODO
             v.add(tmp);
         }
 
@@ -44,16 +63,27 @@ public class OperationsList extends JFrame {
         setLayout(null);
         setTitle("商店进销存管理系统");
 
+//        String otype;
+//        String cid;
+//        String cname;
+//        String dname;
+//        String wname;
+//        String date;
+//        String pname;
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         String[] columnNames =
-                { "商品编号", "商品名称", "商品类别" };
+                { "操作类型","商品编号", "商品名","数量","仓库名","时间","操作人" };
         Vector<Row> data = getData();
-        String[][] dataArray = new String[data.size()][3];
+        String[][] dataArray = new String[data.size()][7];
 
         for(int i=0;i<data.size();i++){
-            dataArray[i][0] = data.get(i).cid;
-            dataArray[i][1] = data.get(i).cname;
-            dataArray[i][2] = data.get(i).dname;
+            dataArray[i][0] = data.get(i).otype;
+            dataArray[i][1] = data.get(i).cid;
+            dataArray[i][2] = data.get(i).cname;
+            dataArray[i][3] = data.get(i).onum;
+            dataArray[i][4] = data.get(i).wname;
+            dataArray[i][5] = data.get(i).date;
+            dataArray[i][6] = data.get(i).pname;
         }
 
 
@@ -97,6 +127,7 @@ public class OperationsList extends JFrame {
 
 
         //监听器
+
         btn_queryCommodities.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -121,16 +152,32 @@ public class OperationsList extends JFrame {
             }
         });
 
+
         btn_queryDomains.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
-                    new OperationsList(getLocation(),getSize(),username);
+                    new DomainsList(getLocation(),getSize(),username);
+                    setVisible(false);
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
-                dispose();
+
             }
         });
+
+        btn_queryrecord.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new OperationsList(getLocation(),getSize(),username);
+                    setVisible(false);
+
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+
 
         //end 监听器
         setVisible(true);

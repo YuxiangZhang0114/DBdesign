@@ -7,7 +7,8 @@ public class DeleteDao {
      *
      * */
     public static String deleteCommodity(String Cname) {
-        String str = "delete from managesystem.commodities where Cname = '%s'";
+        String str = "delete from managesystem.commodities where Cname = N'%s'";
+
         return String.format(str, Cname);
     }
     public static String deleteCommodity(int Cid) {
@@ -15,7 +16,7 @@ public class DeleteDao {
         return String.format(str, Cid);
     }
     public static String deleteWarehouse(String Wname){
-        String str = "delete from managesystem.warehouses where Wname = '%s'";
+        String str = "delete from managesystem.warehouses where Wname = N'%s'";
         return String.format(str, Wname);
     }
 
@@ -23,7 +24,11 @@ public class DeleteDao {
         String str = "delete from managesystem.warehouses where Wid = %d";
         return String.format(str, Wid);
     }
-
+    public static String deleteDomain(String dname){
+        String str = "delete form managesystem.domains where dname = N'%s' ";
+        return String.format(str,dname);
+    }
+;
     public static void main(String[] args) {
         System.out.println(deleteCommodity(1004));
 

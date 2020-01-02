@@ -1,6 +1,8 @@
 package com.upc.yuxiang.gui;
 
 import com.upc.yuxiang.config.SqlServerHelper;
+import com.upc.yuxiang.dao.DeleteDao;
+import com.upc.yuxiang.dao.InsertDao;
 import com.upc.yuxiang.dao.QueryDao;
 
 import javax.swing.*;
@@ -72,6 +74,14 @@ public class WarehouseList extends JFrame {
         table_commodities.setRowHeight(26);
         Container c = getContentPane();
 
+        //label
+
+        JLabel label_wname = new JLabel("仓库名称");
+        label_wname.setBounds(80,50,150,32);
+        c.add(label_wname);
+
+        //end label
+
         //按钮
         JButton btn_queryCommodities = new JButton("查询商品");
         btn_queryCommodities.setBounds(30,20,100,30);
@@ -89,11 +99,34 @@ public class WarehouseList extends JFrame {
         btn_queryrecord.setBounds(390,20,100,30);
         c.add(btn_queryrecord);
 
+        JButton btn_querytWarehouse = new JButton("查询");
+        btn_querytWarehouse.setBounds(30,120,100,30);
+        c.add(btn_querytWarehouse);
+
+        JButton btn_insertWarehouse = new JButton("插入");
+        btn_insertWarehouse.setBounds(150,120,100,30);
+        c.add(btn_insertWarehouse);
+
+        JButton btn_deleteWarehouse = new JButton("删除");
+        btn_deleteWarehouse.setBounds(270,120,100,30);
+        c.add(btn_deleteWarehouse);
+
+
         //end 按钮
         c.add(jscrollpane);
 
+        //textField
+
+        final JTextField textField_wname = new JTextField();
+
+        textField_wname.setBounds(30,80,150,38);
+
+        c.add(textField_wname);
+
+        //end textField
 
         //监听器
+
         btn_queryCommodities.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -128,6 +161,47 @@ public class WarehouseList extends JFrame {
                     ex.printStackTrace();
                 }
 
+            }
+        });
+
+        btn_queryrecord.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new OperationsList(getLocation(),getSize(),username);
+                    setVisible(false);
+
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        btn_querytWarehouse.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        btn_insertWarehouse.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String sql = InsertDao.getInsertWarehouse(textField_wname.getText());
+                try {
+                    System.out.println(sql);
+                    SqlServerHelper.st.execute(sql);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+        btn_deleteWarehouse.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String sql = DeleteDao.deleteWarehouse(textField_wname.getText());
+
+                try {
+                    SqlServerHelper.st.execute(sql);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 
