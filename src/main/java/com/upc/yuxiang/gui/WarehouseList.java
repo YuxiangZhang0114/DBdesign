@@ -81,9 +81,9 @@ public class WarehouseList extends JFrame {
         btn_queryWarehouse.setBounds(150,20,100,30);
         c.add(btn_queryWarehouse);
 
-        JButton btn_inOperation = new JButton("商品种类");
-        btn_inOperation.setBounds(270,20,100,30);
-        c.add(btn_inOperation);
+        JButton btn_queryDomains = new JButton("商品种类");
+        btn_queryDomains.setBounds(270,20,100,30);
+        c.add(btn_queryDomains);
 
         JButton btn_sellOperation = new JButton("查询记录");
         btn_sellOperation.setBounds(390,20,100,30);
@@ -118,6 +118,18 @@ public class WarehouseList extends JFrame {
             }
         });
 
+
+        btn_queryDomains.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new DomainsList(getLocation(),getSize(),username);
+                    setVisible(false);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+
+            }
+        });
 
         //end 监听器
         setVisible(true);

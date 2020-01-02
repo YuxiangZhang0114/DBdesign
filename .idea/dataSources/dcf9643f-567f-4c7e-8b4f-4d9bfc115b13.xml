@@ -67,7 +67,7 @@
     </schema>
     <schema id="19" parent="2" name="managesystem">
       <ObjectId>5</ObjectId>
-      <IntrospectionTimestamp>2019-12-30.11:11:39.757</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2020-01-02.11:12:53.740</IntrospectionTimestamp>
     </schema>
     <schema id="20" parent="2" name="sys">
       <ObjectId>4</ObjectId>
@@ -94,9 +94,8 @@
     </table>
     <table id="25" parent="19" name="Operations">
       <ObjectId>1733581214</ObjectId>
-      <Outdated>1</Outdated>
       <CreatedTimestamp>2019-12-30.11:11:39.397</CreatedTimestamp>
-      <ModifiedTimestamp>2019-12-30.11:11:39.397</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-12-30.14:18:49.763</ModifiedTimestamp>
     </table>
     <table id="26" parent="19" name="Persons">
       <ObjectId>1317579732</ObjectId>
@@ -108,46 +107,51 @@
       <CreatedTimestamp>2019-12-30.09:03:12.850</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.09:03:12.850</ModifiedTimestamp>
     </table>
-    <table id="28" parent="19" name="Total_inv">
+    <table id="28" parent="19" name="Supplier">
+      <ObjectId>1845581613</ObjectId>
+      <CreatedTimestamp>2020-01-02.11:12:53.237</CreatedTimestamp>
+      <ModifiedTimestamp>2020-01-02.11:12:53.350</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="19" name="Total_inv">
       <ObjectId>1365579903</ObjectId>
       <CreatedTimestamp>2019-12-30.08:52:53.153</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.09:29:35.997</ModifiedTimestamp>
     </table>
-    <table id="29" parent="19" name="Warehouses">
+    <table id="30" parent="19" name="Warehouses">
       <ObjectId>1285579618</ObjectId>
       <CreatedTimestamp>2019-12-30.08:42:24.620</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.11:11:39.400</ModifiedTimestamp>
     </table>
-    <column id="30" parent="21" name="id">
+    <column id="31" parent="21" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="31" parent="21" name="name">
+    <column id="32" parent="21" name="name">
       <Position>2</Position>
       <DataType>nvarchar(50 char)|0s</DataType>
     </column>
-    <column id="32" parent="22" name="Cid">
+    <column id="33" parent="22" name="Cid">
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="33" parent="22" name="Cname">
+    <column id="34" parent="22" name="Cname">
       <Position>2</Position>
       <DataType>nvarchar(60 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="34" parent="22" name="Did">
+    <column id="35" parent="22" name="Did">
       <Position>3</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="35" parent="22" name="Commodities_pk">
+    <index id="36" parent="22" name="Commodities_pk">
       <Position>2</Position>
       <ColNames>Cid</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="36" parent="22" name="Commodities_pk">
+    <key id="37" parent="22" name="Commodities_pk">
       <ObjectId>1509580416</ObjectId>
       <CreatedTimestamp>2019-12-30.09:14:41.037</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.09:14:41.037</ModifiedTimestamp>
@@ -155,7 +159,7 @@
       <UnderlyingIndexName>Commodities_pk</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="37" parent="22" name="Commodities_Domains_Did_fk">
+    <foreign-key id="38" parent="22" name="Commodities_Domains_Did_fk">
       <ObjectId>1525580473</ObjectId>
       <CreatedTimestamp>2019-12-30.09:15:13.687</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.09:15:13.687</ModifiedTimestamp>
@@ -165,22 +169,22 @@
       <RefKeyName>Domains_pk</RefKeyName>
       <RefColNames>Did</RefColNames>
     </foreign-key>
-    <column id="38" parent="23" name="Did">
+    <column id="39" parent="23" name="Did">
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="39" parent="23" name="Dname">
+    <column id="40" parent="23" name="Dname">
       <Position>2</Position>
       <DataType>nvarchar(20 char)|0s</DataType>
     </column>
-    <index id="40" parent="23" name="Domains_pk">
+    <index id="41" parent="23" name="Domains_pk">
       <Position>2</Position>
       <ColNames>Did</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="41" parent="23" name="Domains_pk">
+    <key id="42" parent="23" name="Domains_pk">
       <ObjectId>1445580188</ObjectId>
       <CreatedTimestamp>2019-12-30.09:10:16.707</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.09:10:16.707</ModifiedTimestamp>
@@ -188,21 +192,21 @@
       <UnderlyingIndexName>Domains_pk</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="42" parent="24" name="Cid">
+    <column id="43" parent="24" name="Cid">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="43" parent="24" name="Cnum">
+    <column id="44" parent="24" name="Cnum">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="44" parent="24" name="Wid">
+    <column id="45" parent="24" name="Wid">
       <Position>3</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <foreign-key id="45" parent="24" name="Inventory_Commodities_Cid_fk">
+    <foreign-key id="46" parent="24" name="Inventory_Commodities_Cid_fk">
       <ObjectId>1589580701</ObjectId>
       <CreatedTimestamp>2019-12-30.09:21:49.287</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.09:21:49.287</ModifiedTimestamp>
@@ -212,7 +216,7 @@
       <RefKeyName>Commodities_pk</RefKeyName>
       <RefColNames>Cid</RefColNames>
     </foreign-key>
-    <foreign-key id="46" parent="24" name="Inventory_Warehouses_Wid_fk">
+    <foreign-key id="47" parent="24" name="Inventory_Warehouses_Wid_fk">
       <ObjectId>1685581043</ObjectId>
       <CreatedTimestamp>2019-12-30.10:04:29.627</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.10:04:29.627</ModifiedTimestamp>
@@ -222,47 +226,47 @@
       <RefKeyName>Warehouses_pk</RefKeyName>
       <RefColNames>Wid</RefColNames>
     </foreign-key>
-    <column id="47" parent="25" name="OType">
+    <column id="48" parent="25" name="OType">
       <Position>1</Position>
       <DataType>nvarchar(20 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="48" parent="25" name="Cid">
+    <column id="49" parent="25" name="Cid">
       <Position>2</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="49" parent="25" name="Onum">
+    <column id="50" parent="25" name="Onum">
       <Position>3</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="50" parent="25" name="Date">
+    <column id="51" parent="25" name="Date">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="51" parent="25" name="Pid">
+    <column id="52" parent="25" name="Pid">
       <Position>5</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="25" name="Wid">
+    <column id="53" parent="25" name="Wid">
       <Position>6</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="25" name="Record_id">
+    <column id="54" parent="25" name="Record_id">
       <Position>7</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="54" parent="25" name="Operations_pk">
+    <index id="55" parent="25" name="Operations_pk">
       <Position>2</Position>
       <ColNames>Record_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="55" parent="25" name="Operations_pk">
+    <key id="56" parent="25" name="Operations_pk">
       <ObjectId>1749581271</ObjectId>
       <CreatedTimestamp>2019-12-30.11:11:39.397</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.11:11:39.397</ModifiedTimestamp>
@@ -270,7 +274,7 @@
       <UnderlyingIndexName>Operations_pk</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="56" parent="25" name="Operations_Commodities_Cid_fk">
+    <foreign-key id="57" parent="25" name="Operations_Commodities_Cid_fk">
       <ObjectId>1765581328</ObjectId>
       <CreatedTimestamp>2019-12-30.11:11:39.397</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.11:11:39.397</ModifiedTimestamp>
@@ -280,7 +284,7 @@
       <RefKeyName>Commodities_pk</RefKeyName>
       <RefColNames>Cid</RefColNames>
     </foreign-key>
-    <foreign-key id="57" parent="25" name="Operations_Persons_Pid_fk">
+    <foreign-key id="58" parent="25" name="Operations_Persons_Pid_fk">
       <ObjectId>1781581385</ObjectId>
       <CreatedTimestamp>2019-12-30.11:11:39.397</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.11:11:39.397</ModifiedTimestamp>
@@ -290,7 +294,7 @@
       <RefKeyName>Persons_pk</RefKeyName>
       <RefColNames>Pid</RefColNames>
     </foreign-key>
-    <foreign-key id="58" parent="25" name="Operations_Warehouses_Wid_fk">
+    <foreign-key id="59" parent="25" name="Operations_Warehouses_Wid_fk">
       <ObjectId>1797581442</ObjectId>
       <CreatedTimestamp>2019-12-30.11:11:39.397</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.11:11:39.397</ModifiedTimestamp>
@@ -300,31 +304,39 @@
       <RefKeyName>Warehouses_pk</RefKeyName>
       <RefColNames>Wid</RefColNames>
     </foreign-key>
-    <column id="59" parent="26" name="Pid">
+    <trigger id="60" parent="25" name="Operate_trigger">
+      <ObjectId>1813581499</ObjectId>
+      <SourceTextLength>1483</SourceTextLength>
+      <CreatedTimestamp>2019-12-30.11:12:28.940</CreatedTimestamp>
+      <ModifiedTimestamp>2019-12-30.14:18:49.763</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <column id="61" parent="26" name="Pid">
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="60" parent="26" name="Pname">
+    <column id="62" parent="26" name="Pname">
       <Position>2</Position>
       <DataType>nvarchar(60 char)|0s</DataType>
     </column>
-    <column id="61" parent="26" name="pwd">
+    <column id="63" parent="26" name="pwd">
       <Position>3</Position>
       <DataType>nvarchar(64 char)|0s</DataType>
     </column>
-    <index id="62" parent="26" name="Persons_pk">
+    <index id="64" parent="26" name="Persons_pk">
       <Position>3</Position>
       <ColNames>Pid</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="63" parent="26" name="Persons_Pname_uindex">
+    <index id="65" parent="26" name="Persons_Pname_uindex">
       <Position>2</Position>
       <ColNames>Pname</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="64" parent="26" name="Persons_pk">
+    <key id="66" parent="26" name="Persons_pk">
       <ObjectId>1573580644</ObjectId>
       <CreatedTimestamp>2019-12-30.09:21:17.980</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.09:21:17.980</ModifiedTimestamp>
@@ -332,29 +344,61 @@
       <UnderlyingIndexName>Persons_pk</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="65" parent="27" name="Cid">
+    <column id="67" parent="27" name="Cid">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="66" parent="27" name="Wid">
+    <column id="68" parent="27" name="Wid">
       <Position>2</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="67" parent="28" name="Cid">
+    <column id="69" parent="28" name="Sid">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="28" name="Sname">
+      <Position>2</Position>
+      <DataType>nvarchar(30 char)|0s</DataType>
+    </column>
+    <column id="71" parent="28" name="Sinfo">
+      <Position>3</Position>
+      <DataType>nvarchar(120 char)|0s</DataType>
+    </column>
+    <index id="72" parent="28" name="Supplier_pk">
+      <Position>2</Position>
+      <ColNames>Sid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="73" parent="28" name="Supplier_Sname_uindex">
+      <Position>3</Position>
+      <ColNames>Sname</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="74" parent="28" name="Supplier_pk">
+      <ObjectId>1861581670</ObjectId>
+      <CreatedTimestamp>2020-01-02.11:12:53.330</CreatedTimestamp>
+      <ModifiedTimestamp>2020-01-02.11:12:53.330</ModifiedTimestamp>
+      <ColNames>Sid</ColNames>
+      <UnderlyingIndexName>Supplier_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="75" parent="29" name="Cid">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="68" parent="28" name="Cnum">
+    <column id="76" parent="29" name="Cnum">
       <Position>2</Position>
       <DefaultConstraintName>DF__Total_inv__Cnum__52593CB8</DefaultConstraintName>
       <DefaultExpression>0</DefaultExpression>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <foreign-key id="69" parent="28" name="Total_inv_Commodities_Cid_fk">
+    <foreign-key id="77" parent="29" name="Total_inv_Commodities_Cid_fk">
       <ObjectId>1637580872</ObjectId>
       <CreatedTimestamp>2019-12-30.09:28:57.070</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.09:28:57.070</ModifiedTimestamp>
@@ -364,29 +408,29 @@
       <RefKeyName>Commodities_pk</RefKeyName>
       <RefColNames>Cid</RefColNames>
     </foreign-key>
-    <default id="70" parent="28" name="DF__Total_inv__Cnum__52593CB8">
+    <default id="78" parent="29" name="DF__Total_inv__Cnum__52593CB8">
       <ObjectId>1381579960</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-12-30.08:52:53.153</ModifiedTimestamp>
       <ColNames>Cnum</ColNames>
       <DefaultExpression>0</DefaultExpression>
     </default>
-    <column id="71" parent="29" name="Wid">
+    <column id="79" parent="30" name="Wid">
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="72" parent="29" name="Wname">
+    <column id="80" parent="30" name="Wname">
       <Position>2</Position>
       <DataType>nvarchar(30 char)|0s</DataType>
     </column>
-    <index id="73" parent="29" name="Warehouses_pk">
+    <index id="81" parent="30" name="Warehouses_pk">
       <Position>2</Position>
       <ColNames>Wid</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="74" parent="29" name="Warehouses_pk">
+    <key id="82" parent="30" name="Warehouses_pk">
       <ObjectId>1621580815</ObjectId>
       <CreatedTimestamp>2019-12-30.09:27:37.877</CreatedTimestamp>
       <ModifiedTimestamp>2019-12-30.09:27:37.877</ModifiedTimestamp>

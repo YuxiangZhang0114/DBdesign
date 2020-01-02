@@ -1,22 +1,78 @@
 package com.upc.yuxiang.gui;
 
+import com.upc.yuxiang.config.SqlServerHelper;
+import com.upc.yuxiang.dao.QueryDao;
+
 import javax.swing.*;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Enumeration;
+import java.util.Vector;
 
-public class ManageGui extends JFrame {
+public class DomainsList extends JFrame {
 
-    ManageGui(final String username){
-        setBounds(450,300,800,600);
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+
+    class Row{
+        String did;
+        String dname;
+
+    }
+    Vector<Row> data;
+
+    Vector<Row> getData() throws SQLException {
+        Vector<Row> v = new Vector<Row>();
+        String sql = QueryDao.getQueryWarehouses();
+
+        ResultSet rs = SqlServerHelper.st.executeQuery(sql);
+
+        while(rs.next()){
+            Row tmp = new Row();
+            tmp.did = rs.getString("Did");
+            tmp.dname = rs.getString("Dname");
+            v.add(tmp);
+        }
+
+
+
+        return v;
+    }
+    public DomainsList(Point loaction, Dimension dim, final String username) throws SQLException {
+        setLayout(null);
         setTitle("商店进销存管理系统");
+
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        String[] columnNames =
+                { "种类编号", "种类名" };
+        Vector<Row> data = getData();
+        String[][] dataArray = new String[data.size()][2];
+
+        for(int i=0;i<data.size();i++){
+            dataArray[i][0] = data.get(i).did;
+            dataArray[i][1] = data.get(i).dname;
+        }
+
+
+        setLocation(loaction);
+        setSize(dim);
+//        setBounds(450,300,800,600);
+        JTable table_commodities = new JTable(dataArray,columnNames);
+//        FitTableColumns(table_commodities);
+        JScrollPane jscrollpane = new JScrollPane(table_commodities);
+
+        jscrollpane.setViewportView(table_commodities);
+
+        jscrollpane.setBounds(40,150,720,400);
+
+        table_commodities.setGridColor(Color.gray);
+        table_commodities.setRowHeight(26);
         Container c = getContentPane();
-        c.setLayout(null);
 
         //按钮
-
         JButton btn_queryCommodities = new JButton("查询商品");
         btn_queryCommodities.setBounds(30,20,100,30);
         c.add(btn_queryCommodities);
@@ -34,7 +90,10 @@ public class ManageGui extends JFrame {
         c.add(btn_sellOperation);
 
         //end 按钮
-        //listeners
+        c.add(jscrollpane);
+
+
+        //监听器
         btn_queryCommodities.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -59,7 +118,6 @@ public class ManageGui extends JFrame {
             }
         });
 
-
         btn_queryDomains.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -72,11 +130,11 @@ public class ManageGui extends JFrame {
             }
         });
 
-        //end liseners
-        setVisible(true);
 
+        //end 监听器
+        setVisible(true);
     }
-    public static void main(String[] args) {
-        new ManageGui("admin");
+    public static void main(String[] args) throws SQLException {
+//        new CommoditiesList();
     }
 }

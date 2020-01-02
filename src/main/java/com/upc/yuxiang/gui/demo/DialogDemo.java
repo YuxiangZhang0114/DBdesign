@@ -1,4 +1,4 @@
-package com.upc.yuxiang.gui;
+package com.upc.yuxiang.gui.demo;
 
 import javax.swing.*;
 import java.awt.*;

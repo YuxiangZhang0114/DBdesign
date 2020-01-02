@@ -1,6 +1,4 @@
-package com.upc.yuxiang.gui;
-
-import sun.misc.JavaLangAccess;
+package com.upc.yuxiang.gui.demo;
 
 import javax.swing.*;
 import java.awt.*;
