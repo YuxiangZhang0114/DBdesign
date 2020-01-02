@@ -17,7 +17,10 @@ public class QueryDao {
         String str = "select Pname,pwd from managesystem.Persons where Pname = '%s' ";
         return String.format(str, userName);
     }
-
+    public static String getQueryDomains(){
+        String str = "select Did, Dname from managesystem.Domains";
+        return str;
+    }
     public static String getQueryWarehouses(){
         String str = "select Wid,Wname from managesystem.Warehouses";
         return str;
@@ -26,7 +29,7 @@ public class QueryDao {
         String str = "select Wid,Wname from managesystem.Warehouses where Wname = '%s'" ;
         return String.format(str, Wname);
     }
-    public static String getQuertCommoditiesWithDomain(){
+    public static String getQueryCommoditiesWithDomain(){
         String str = "select x.Cid Cid, x.Cname Cname, y.Dname Dname from managesystem.Commodities x, managesystem.Domains y where x.Did = y.Did ";
         return str;
     }

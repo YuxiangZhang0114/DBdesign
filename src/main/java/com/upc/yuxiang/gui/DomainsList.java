@@ -26,7 +26,7 @@ public class DomainsList extends JFrame {
 
     Vector<Row> getData() throws SQLException {
         Vector<Row> v = new Vector<Row>();
-        String sql = QueryDao.getQueryWarehouses();
+        String sql = QueryDao.getQueryDomains();
 
         ResultSet rs = SqlServerHelper.st.executeQuery(sql);
 
@@ -85,9 +85,9 @@ public class DomainsList extends JFrame {
         btn_queryDomains.setBounds(270,20,100,30);
         c.add(btn_queryDomains);
 
-        JButton btn_sellOperation = new JButton("查询记录");
-        btn_sellOperation.setBounds(390,20,100,30);
-        c.add(btn_sellOperation);
+        JButton btn_queryrecord = new JButton("查询记录");
+        btn_queryrecord.setBounds(390,20,100,30);
+        c.add(btn_queryrecord);
 
         //end 按钮
         c.add(jscrollpane);

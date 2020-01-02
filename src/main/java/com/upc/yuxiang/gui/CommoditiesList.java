@@ -4,14 +4,11 @@ import com.upc.yuxiang.config.SqlServerHelper;
 import com.upc.yuxiang.dao.QueryDao;
 
 import javax.swing.*;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Enumeration;
 import java.util.Vector;
 
 public class CommoditiesList extends JFrame {
@@ -27,7 +24,7 @@ public class CommoditiesList extends JFrame {
 
     Vector<Row> getData() throws SQLException {
         Vector<Row> v = new Vector<Row>();
-        String sql = QueryDao.getQuertCommoditiesWithDomain();
+        String sql = QueryDao.getQueryCommoditiesWithDomain();
 
         ResultSet rs = SqlServerHelper.st.executeQuery(sql);
 
@@ -85,13 +82,14 @@ public class CommoditiesList extends JFrame {
         btn_queryWarehouse.setBounds(150,20,100,30);
         c.add(btn_queryWarehouse);
 
-        JButton btn_inOperation = new JButton("商品种类");
-        btn_inOperation.setBounds(270,20,100,30);
-        c.add(btn_inOperation);
+        JButton btn_queryDomains = new JButton("商品种类");
+        btn_queryDomains.setBounds(270,20,100,30);
+        c.add(btn_queryDomains);
 
-        JButton btn_sellOperation = new JButton("查询记录");
-        btn_sellOperation.setBounds(390,20,100,30);
-        c.add(btn_sellOperation);
+
+        JButton btn_queryrecord = new JButton("查询记录");
+        btn_queryrecord.setBounds(390,20,100,30);
+        c.add(btn_queryrecord);
 
 
 
@@ -123,6 +121,17 @@ public class CommoditiesList extends JFrame {
                 }
             }
         });
+        btn_queryDomains.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new OperationsList(getLocation(),getSize(),username);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+                dispose();
+            }
+        });
+
 
         //end 监听器
         setVisible(true);

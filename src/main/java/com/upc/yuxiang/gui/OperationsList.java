@@ -4,36 +4,35 @@ import com.upc.yuxiang.config.SqlServerHelper;
 import com.upc.yuxiang.dao.QueryDao;
 
 import javax.swing.*;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Enumeration;
 import java.util.Vector;
 
-public class WarehouseList extends JFrame {
+public class OperationsList extends JFrame {
 
 
     class Row{
-        String wid;
-        String wname;
+        String cid;
+        String cname;
+        String dname;
 
     }
     Vector<Row> data;
 
     Vector<Row> getData() throws SQLException {
         Vector<Row> v = new Vector<Row>();
-        String sql = QueryDao.getQueryWarehouses();
+        String sql = QueryDao.getQueryCommoditiesWithDomain();
 
         ResultSet rs = SqlServerHelper.st.executeQuery(sql);
 
         while(rs.next()){
             Row tmp = new Row();
-            tmp.wid = rs.getString("Wid");
-            tmp.wname = rs.getString("Wname");
+            tmp.cid = rs.getString("cid");
+            tmp.cname = rs.getString("cname");
+            tmp.dname =rs.getString("dname");
             v.add(tmp);
         }
 
@@ -41,19 +40,20 @@ public class WarehouseList extends JFrame {
 
         return v;
     }
-    public WarehouseList(Point loaction, Dimension dim, final String username) throws SQLException {
+    public OperationsList(Point loaction, Dimension dim, final String username) throws SQLException {
         setLayout(null);
         setTitle("商店进销存管理系统");
 
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         String[] columnNames =
-                { "仓库编号", "仓库名" };
+                { "商品编号", "商品名称", "商品类别" };
         Vector<Row> data = getData();
-        String[][] dataArray = new String[data.size()][2];
+        String[][] dataArray = new String[data.size()][3];
 
         for(int i=0;i<data.size();i++){
-            dataArray[i][0] = data.get(i).wid;
-            dataArray[i][1] = data.get(i).wname;
+            dataArray[i][0] = data.get(i).cid;
+            dataArray[i][1] = data.get(i).cname;
+            dataArray[i][2] = data.get(i).dname;
         }
 
 
@@ -73,6 +73,7 @@ public class WarehouseList extends JFrame {
         Container c = getContentPane();
 
         //按钮
+
         JButton btn_queryCommodities = new JButton("查询商品");
         btn_queryCommodities.setBounds(30,20,100,30);
         c.add(btn_queryCommodities);
@@ -88,6 +89,8 @@ public class WarehouseList extends JFrame {
         JButton btn_queryrecord = new JButton("查询记录");
         btn_queryrecord.setBounds(390,20,100,30);
         c.add(btn_queryrecord);
+
+
 
         //end 按钮
         c.add(jscrollpane);
@@ -118,16 +121,14 @@ public class WarehouseList extends JFrame {
             }
         });
 
-
         btn_queryDomains.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
-                    new DomainsList(getLocation(),getSize(),username);
-                    setVisible(false);
+                    new OperationsList(getLocation(),getSize(),username);
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
-
+                dispose();
             }
         });
 
