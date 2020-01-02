@@ -34,6 +34,15 @@ public class ManageGui extends JFrame {
         btn_queryrecord.setBounds(390,20,100,30);
         c.add(btn_queryrecord);
 
+        JButton btn_sell = new JButton("销 售");
+        btn_sell.setBounds(550,20,130,45);
+        c.add(btn_sell);
+
+        JButton btn_in = new JButton("入 库");
+        btn_in.setBounds(550,70,130,45);
+        c.add(btn_in);
+
+
         //end 按钮
         //listeners
         btn_queryCommodities.addActionListener(new ActionListener() {

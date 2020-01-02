@@ -105,6 +105,15 @@ public class DomainsList extends JFrame {
         JButton btn_deleteDomain = new JButton("删除");
         btn_deleteDomain.setBounds(270,120,100,30);
         c.add(btn_deleteDomain);
+
+        JButton btn_sell = new JButton("销 售");
+        btn_sell.setBounds(550,20,130,45);
+        c.add(btn_sell);
+
+        JButton btn_in = new JButton("入 库");
+        btn_in.setBounds(550,70,130,45);
+        c.add(btn_in);
+
         //end 按钮
         c.add(jscrollpane);
 
