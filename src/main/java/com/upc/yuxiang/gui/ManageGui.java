@@ -126,6 +126,7 @@ public class ManageGui extends JFrame {
         });
 
 
+
         btn_inventory.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
