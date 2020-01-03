@@ -61,6 +61,8 @@ public class ManageGui extends JFrame {
         c.add(label_username2);
         //end label
 
+
+
         //end 按钮
         //listeners
         btn_queryCommodities.addActionListener(new ActionListener() {
