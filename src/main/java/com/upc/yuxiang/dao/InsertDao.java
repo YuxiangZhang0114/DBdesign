@@ -2,10 +2,10 @@ package com.upc.yuxiang.dao;
 
 
 public class InsertDao {
-    public static String getInertCommodities(String cname, int domainId){
-        String str  = "insert into managesystem.Commodities values(N'%s', %d)";
+    public static String getInertCommodities(String cname, int domainId,String price){
+        String str  = "insert into managesystem.Commodities values(N'%s', %d, N'%s')";
 
-        return String.format(str, cname,domainId);
+        return String.format(str, cname,domainId,price);
     }
     public static String getInsertWarehouse(String Wname){
         String str = "insert into managesystem.Warehouses values(N'%s')";

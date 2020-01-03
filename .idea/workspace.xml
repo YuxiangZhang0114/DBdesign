@@ -3,12 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="some new gui demo">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13/storage_v2/_src_/database/TestDB.sFwclQ/schema/managesystem.1K9STA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13/storage_v2/_src_/database/TestDB.sFwclQ/schema/managesystem.1K9STA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/DBController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/DBController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/DeleteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/DeleteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/InUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/InUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/DomainsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/DomainsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/OperationsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/OperationsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/SellUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/SellUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/WarehouseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/WarehouseList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +41,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="TestDB@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="TestDB: database" type="ccb7ac2a:MsImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="TestDB@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="TestDB: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="managesystem: schema" type="2865ee2e:MsImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -98,26 +98,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Login">
+  <component name="RunManager" selected="Application.ManageGui">
     <configuration name="CommoditiesList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.CommoditiesList" />
       <module name="dbdesign" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.upc.yuxiang.gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.dao.DeleteDao" />
-      <module name="dbdesign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.upc.yuxiang.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,6 +138,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SellUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.SellUI" />
+      <module name="dbdesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upc.yuxiang.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SqlServerHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.config.SqlServerHelper" />
       <module name="dbdesign" />
@@ -164,34 +164,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="dbdesign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.Login" />
-      <item itemvalue="Application.DeleteDao" />
       <item itemvalue="Application.ManageGui" />
       <item itemvalue="Application.SqlServerHelper" />
       <item itemvalue="Application.CommoditiesList" />
+      <item itemvalue="Application.SellUI" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Login" />
         <item itemvalue="Application.ManageGui" />
+        <item itemvalue="Application.SellUI" />
         <item itemvalue="Application.CommoditiesList" />
+        <item itemvalue="Application.Login" />
         <item itemvalue="Application.SqlServerHelper" />
-        <item itemvalue="Application.DeleteDao" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +213,7 @@
       <workItem from="1577750377395" duration="5119000" />
       <workItem from="1577755875575" duration="48138000" />
       <workItem from="1577959928978" duration="25209000" />
-      <workItem from="1578038254252" duration="1397000" />
+      <workItem from="1578038254252" duration="5030000" />
     </task>
     <task id="LOCAL-00001" summary="some new gui demo">
       <created>1577756604076</created>
@@ -262,10 +248,10 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577960018987" />
-    <state x="709" y="254" key="#com.intellij.ide.util.MemberChooser" timestamp="1577782171101">
+    <state x="709" y="254" key="#com.intellij.ide.util.MemberChooser" timestamp="1578040236054">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state x="709" y="254" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1017@0.23.1792.1017" timestamp="1577782171101" />
+    <state x="709" y="254" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1017@0.23.1792.1017" timestamp="1578040236054" />
     <state x="633" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577610904992">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
@@ -298,22 +284,22 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="339" y="132" key="CommitChangelistDialog2/0.23.1792.1017@0.23.1792.1017" timestamp="1577967924741" />
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1578039396057">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1578044199900">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1578039396057" />
-    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1578039396056">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1578044199900" />
+    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1578044199900">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1578039396056" />
-    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1578039396056">
+    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1578044199900" />
+    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1578044199899">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1578039396056" />
-    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1578039396057">
+    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1578044199899" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1578044199900">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1578039396057" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1578044199900" />
     <state width="1750" height="341" key="GridCell.Tab.1.bottom" timestamp="1578038031476">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
@@ -362,10 +348,10 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="662" y="360" width="467" height="339" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1577970693574" />
-    <state x="632" y="222" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578035910137">
+    <state x="632" y="222" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578043440333">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state x="632" y="222" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1578035910137" />
+    <state x="632" y="222" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1578043440333" />
     <state x="654" y="265" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577688325849">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>

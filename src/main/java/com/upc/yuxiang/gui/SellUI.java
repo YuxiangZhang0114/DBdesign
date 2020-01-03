@@ -79,6 +79,7 @@ public class SellUI extends JFrame {
 
 
 
+
         //end label
 
         //textfield
@@ -99,11 +100,11 @@ public class SellUI extends JFrame {
 
         //button
         JButton btn_add = new JButton("添加");
-        btn_add.setBounds(50,100,100,30);
+        btn_add.setBounds(220,100,100,30);
         c.add(btn_add);
 
         JButton btn_commmit = new JButton("提交");
-        btn_commmit.setBounds(280,100,100,30);
+        btn_commmit.setBounds(330,100,100,30);
         c.add(btn_commmit);
 
 

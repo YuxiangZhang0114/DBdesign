@@ -18,20 +18,20 @@ public class ManageGui extends JFrame {
         //按钮
 
         JButton btn_queryCommodities = new JButton("查询商品");
-        btn_queryCommodities.setBounds(30,20,100,30);
+        btn_queryCommodities.setBounds(20,10,100,30);
         c.add(btn_queryCommodities);
 
         JButton btn_queryWarehouse = new JButton("查询仓库");
-        btn_queryWarehouse.setBounds(150,20,100,30);
+        btn_queryWarehouse.setBounds(140,10,100,30);
         c.add(btn_queryWarehouse);
 
 
         JButton btn_queryDomains = new JButton("商品种类");
-        btn_queryDomains.setBounds(270,20,100,30);
+        btn_queryDomains.setBounds(260,10,100,30);
         c.add(btn_queryDomains);
 
         JButton btn_queryrecord = new JButton("查询记录");
-        btn_queryrecord.setBounds(390,20,100,30);
+        btn_queryrecord.setBounds(380,10,100,30);
         c.add(btn_queryrecord);
 
         JButton btn_sell = new JButton("销 售");
@@ -148,7 +148,12 @@ public class ManageGui extends JFrame {
             }
         });
 
-
+        btn_logout.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new Login();
+                setVisible(false);
+            }
+        });
 
         //end liseners
         setVisible(true);

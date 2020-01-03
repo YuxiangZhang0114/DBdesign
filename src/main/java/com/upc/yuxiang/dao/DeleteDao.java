@@ -25,7 +25,7 @@ public class DeleteDao {
         return String.format(str, Wid);
     }
     public static String deleteDomain(String dname){
-        String str = "delete from managesystem.Domains where Dname = '%s' ";
+        String str = "delete from managesystem.Domains where Dname = N'%s' ";
         return String.format(str,dname);
     }
 ;

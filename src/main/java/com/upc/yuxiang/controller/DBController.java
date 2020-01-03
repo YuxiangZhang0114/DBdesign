@@ -9,7 +9,7 @@ public class DBController {
     * Insert 操作
     * */
     public static Boolean insertCommodity(String cname, int domainId) throws SQLException {
-        SqlServerHelper.st.execute(InsertDao.getInertCommodities(cname, domainId));
+//        SqlServerHelper.st.execute(InsertDao.getInertCommodities(cname, domainId));
         return true;
     }
     public static Boolean insertWarehouse(String Wname) throws SQLException {

@@ -24,6 +24,7 @@ public class CommoditiesList extends JFrame {
         String cid;
         String cname;
         String dname;
+        String price;
 
     }
     Vector<Row> data;
@@ -39,6 +40,7 @@ public class CommoditiesList extends JFrame {
             tmp.cid = rs.getString("cid");
             tmp.cname = rs.getString("cname");
             tmp.dname =rs.getString("dname");
+            tmp.price = rs.getString("price");
             v.add(tmp);
         }
 
@@ -52,14 +54,15 @@ public class CommoditiesList extends JFrame {
 
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         String[] columnNames =
-                { "商品编号", "商品名称", "商品类别" };
+                { "商品编号", "商品名称", "商品类别" ,"价格"};
         final Vector<Row> data = getData();
-        final String[][] dataArray = new String[data.size()][3];
+        final String[][] dataArray = new String[data.size()][4];
 
         for(int i=0;i<data.size();i++){
             dataArray[i][0] = data.get(i).cid;
             dataArray[i][1] = data.get(i).cname;
             dataArray[i][2] = data.get(i).dname;
+            dataArray[i][3] = data.get(i).price;
         }
 
 
@@ -86,23 +89,21 @@ public class CommoditiesList extends JFrame {
         //按钮
 
         JButton btn_queryCommodities = new JButton("查询商品");
-        btn_queryCommodities.setBounds(30,20,100,30);
+        btn_queryCommodities.setBounds(20,10,100,30);
         c.add(btn_queryCommodities);
 
         JButton btn_queryWarehouse = new JButton("查询仓库");
-        btn_queryWarehouse.setBounds(150,20,100,30);
+        btn_queryWarehouse.setBounds(140,10,100,30);
         c.add(btn_queryWarehouse);
 
+
         JButton btn_queryDomains = new JButton("商品种类");
-        btn_queryDomains.setBounds(270,20,100,30);
+        btn_queryDomains.setBounds(260,10,100,30);
         c.add(btn_queryDomains);
 
-
         JButton btn_queryrecord = new JButton("查询记录");
-        btn_queryrecord.setBounds(390,20,100,30);
+        btn_queryrecord.setBounds(380,10,100,30);
         c.add(btn_queryrecord);
-
-
 //        JButton btn_querytCommodity = new JButton("查询");
 //        btn_querytCommodity.setBounds(30,120,100,30);
 //        c.add(btn_querytCommodity);
@@ -128,6 +129,11 @@ public class CommoditiesList extends JFrame {
         c.add(btn_inventory);
 
 
+        JButton btn_logout = new JButton("切换登录");
+        btn_logout.setBounds(690,100,100,30);
+        c.add(btn_logout);
+
+
         //end 按钮
         c.add(jscrollpane);
 
@@ -135,12 +141,15 @@ public class CommoditiesList extends JFrame {
         //label
         JLabel label_cname = new JLabel("商品名称");
         JLabel label_domain = new JLabel("领域编号");
+        JLabel label_price = new JLabel("商品价格");
 
-        label_cname.setBounds(80,50,150,32);
-        label_domain.setBounds(250,50,150,32);
+        label_cname.setBounds(40,50,150,32);
+        label_domain.setBounds(160,50,150,32);
+        label_price.setBounds(270,50,150,32);
 
         c.add(label_cname);
         c.add(label_domain);
+        c.add(label_price);
 
         JLabel label_username1 = new JLabel("当前用户：");
         label_username1.setBounds(690,20,90,35);
@@ -160,14 +169,16 @@ public class CommoditiesList extends JFrame {
 
         final JTextField textField_cname = new JTextField();
         final JTextField textField_domain = new JTextField();
-
-        textField_cname.setBounds(30,80,150,38);
-        textField_domain.setBounds(200,80,150,38);
+        final JTextField textField_price = new JTextField();
+        textField_cname.setBounds(30,80,100,30);
+        textField_domain.setBounds(140,80,100,30);
+        textField_price.setBounds(250,80,100,30);
 
 
 
         c.add(textField_cname);
         c.add(textField_domain);
+        c.add(textField_price);
 
 
         //
@@ -232,7 +243,7 @@ public class CommoditiesList extends JFrame {
 
         btn_insertCommodity.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String sql = InsertDao.getInertCommodities(textField_cname.getText(),Integer.parseInt(textField_domain.getText()));
+                String sql = InsertDao.getInertCommodities(textField_cname.getText(),Integer.parseInt(textField_domain.getText()),textField_price.getText());
                 try {
 
                     SqlServerHelper.st.execute(sql);
@@ -286,6 +297,14 @@ public class CommoditiesList extends JFrame {
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
+            }
+        });
+
+
+        btn_logout.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new Login();
+                setVisible(false);
             }
         });
 

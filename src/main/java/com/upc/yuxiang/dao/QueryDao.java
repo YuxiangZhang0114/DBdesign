@@ -33,7 +33,7 @@ public class QueryDao {
         return String.format(str, Wname);
     }
     public static String getQueryCommoditiesWithDomain(){
-        String str = "select x.Cid Cid, x.Cname Cname, y.Dname Dname from managesystem.Commodities x, managesystem.Domains y where x.Did = y.Did ";
+        String str = "select x.Cid Cid, x.Cname Cname, y.Dname Dname, x.price price from managesystem.Commodities x, managesystem.Domains y where x.Did = y.Did ";
         return str;
     }
 
