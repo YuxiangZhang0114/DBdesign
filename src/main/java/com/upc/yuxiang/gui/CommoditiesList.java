@@ -234,14 +234,17 @@ public class CommoditiesList extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String sql = InsertDao.getInertCommodities(textField_cname.getText(),Integer.parseInt(textField_domain.getText()));
                 try {
-                    System.out.println(sql);
+
                     SqlServerHelper.st.execute(sql);
                     JOptionPane.showMessageDialog(null,"插入成功");
+                    textField_cname.setText("");
+                    textField_domain.setText("");
 
                 } catch (SQLException ex) {
+                    JOptionPane.showMessageDialog(null,"插入失败\n"+ex.getMessage());
+
                     ex.printStackTrace();
                 }
-                JOptionPane.showMessageDialog(null,"插入成功");
             }
         });
 
@@ -251,6 +254,8 @@ public class CommoditiesList extends JFrame {
                 try {
                     SqlServerHelper.st.execute(sql);
                     JOptionPane.showMessageDialog(null,"删除成功");
+                    textField_cname.setText("");
+                    textField_domain.setText("");
 
                 } catch (SQLException ex) {
                     ex.printStackTrace();

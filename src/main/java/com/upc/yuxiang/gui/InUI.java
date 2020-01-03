@@ -54,7 +54,7 @@ public class InUI extends JFrame {
 
 
     }
-    InUI(Point location, Dimension size, String username){
+    InUI(Point location, Dimension size, final String username){
         setLocation(location);
         setSize(size);
         setLayout(null);
@@ -193,31 +193,8 @@ public class InUI extends JFrame {
                     if(t){
                         return;
                     }
-                    data.clear();
-                    String[][] dataArray = new String[1][4];
-                    for(int j=0;j<data.size();j++){
-                        dataArray[j][0] = data.get(j).cid;
-                        dataArray[j][1] = data.get(j).wid;
-                        dataArray[j][2] = data.get(j).onum;
-                        dataArray[j][3] = data.get(j).pid;
-
-
-                    }
-                    String[] columnNames = {"商品编号","仓库编号","操作数量","操作人编号"};
-//        setBounds(450,300,800,600);
-                    final JTable table_selled = new JTable(dataArray,columnNames);
-//        FitTableColumns(table_selled);
-                    JScrollPane jscrollpane = new JScrollPane(table_selled);
-
-                    jscrollpane.setViewportView(table_selled);
-
-                    jscrollpane.setBounds(30,150,360,400);
-
-                    table_selled.setGridColor(Color.gray);
-                    table_selled.setRowHeight(26);
-                    Container c = getContentPane();
-                    c.add(jscrollpane);
-
+                    new InUI(getLocation(),getSize(),username);
+                    setVisible(false);
 
                 }
             }

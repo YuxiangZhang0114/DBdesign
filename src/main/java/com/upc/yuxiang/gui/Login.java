@@ -75,6 +75,7 @@ public class Login extends JFrame {
                     if (LoginContrller.checkLogin(userName,userPwd)){
                         //JOptionPane.showMessageDialog(null,"登陆成功");
                         new ManageGui(userName);
+                        setVisible(false);
                     }else{
                         JOptionPane.showMessageDialog(null,"登陆失败");
                     }

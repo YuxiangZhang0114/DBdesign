@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="some new gui demo">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/DomainsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/DomainsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/InUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/InUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/InventoryGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/InventoryGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/OperationsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/OperationsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/SellUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/SellUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/WarehouseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/WarehouseList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ManageGui">
+  <component name="RunManager" selected="Application.Login">
     <configuration name="CommoditiesList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.upc.yuxiang.gui.CommoditiesList" />
       <module name="dbdesign" />
@@ -190,8 +187,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ManageGui" />
         <item itemvalue="Application.Login" />
+        <item itemvalue="Application.ManageGui" />
         <item itemvalue="Application.CommoditiesList" />
         <item itemvalue="Application.SqlServerHelper" />
         <item itemvalue="Application.DeleteDao" />
@@ -207,36 +204,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@3e9458c4" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4cb13022" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@70bc2849" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@62190b41" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2665e0bc" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@30d1bc4f" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -259,7 +226,8 @@
       <workItem from="1577608993302" duration="25573000" />
       <workItem from="1577750377395" duration="5119000" />
       <workItem from="1577755875575" duration="48138000" />
-      <workItem from="1577959928978" duration="25055000" />
+      <workItem from="1577959928978" duration="25209000" />
+      <workItem from="1578038254252" duration="1397000" />
     </task>
     <task id="LOCAL-00001" summary="some new gui demo">
       <created>1577756604076</created>
@@ -330,38 +298,38 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="339" y="132" key="CommitChangelistDialog2/0.23.1792.1017@0.23.1792.1017" timestamp="1577967924741" />
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1578037626385">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1578039396057">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1578037626385" />
-    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1578037626384">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1578039396057" />
+    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1578039396056">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1578037626384" />
-    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1578037626384">
+    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1578039396056" />
+    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1578039396056">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1578037626384" />
-    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1578037626385">
+    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1578039396056" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1578039396057">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1578037626385" />
-    <state width="1750" height="341" key="GridCell.Tab.1.bottom" timestamp="1577972349479">
+    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1578039396057" />
+    <state width="1750" height="341" key="GridCell.Tab.1.bottom" timestamp="1578038031476">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="341" key="GridCell.Tab.1.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1577972349479" />
-    <state width="1750" height="341" key="GridCell.Tab.1.center" timestamp="1577972349479">
+    <state width="1750" height="341" key="GridCell.Tab.1.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1578038031476" />
+    <state width="1750" height="341" key="GridCell.Tab.1.center" timestamp="1578038031475">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="341" key="GridCell.Tab.1.center/0.23.1792.1017@0.23.1792.1017" timestamp="1577972349479" />
-    <state width="1750" height="341" key="GridCell.Tab.1.left" timestamp="1577972349479">
+    <state width="1750" height="341" key="GridCell.Tab.1.center/0.23.1792.1017@0.23.1792.1017" timestamp="1578038031475" />
+    <state width="1750" height="341" key="GridCell.Tab.1.left" timestamp="1578038031475">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="341" key="GridCell.Tab.1.left/0.23.1792.1017@0.23.1792.1017" timestamp="1577972349479" />
-    <state width="1750" height="341" key="GridCell.Tab.1.right" timestamp="1577972349479">
+    <state width="1750" height="341" key="GridCell.Tab.1.left/0.23.1792.1017@0.23.1792.1017" timestamp="1578038031475" />
+    <state width="1750" height="341" key="GridCell.Tab.1.right" timestamp="1578038031476">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="341" key="GridCell.Tab.1.right/0.23.1792.1017@0.23.1792.1017" timestamp="1577972349479" />
+    <state width="1750" height="341" key="GridCell.Tab.1.right/0.23.1792.1017@0.23.1792.1017" timestamp="1578038031476" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1577665981734">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>

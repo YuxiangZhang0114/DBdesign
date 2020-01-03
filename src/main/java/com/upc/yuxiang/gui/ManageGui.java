@@ -47,6 +47,16 @@ public class ManageGui extends JFrame {
         c.add(btn_inventory);
 
 
+        JButton btn_logout = new JButton("切换登录");
+        btn_logout.setBounds(690,100,100,30);
+        c.add(btn_logout);
+
+
+
+
+
+        //end 按钮
+
 
 
         //label
@@ -62,8 +72,6 @@ public class ManageGui extends JFrame {
         //end label
 
 
-
-        //end 按钮
         //listeners
         btn_queryCommodities.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -139,6 +147,7 @@ public class ManageGui extends JFrame {
                 }
             }
         });
+
 
 
         //end liseners
