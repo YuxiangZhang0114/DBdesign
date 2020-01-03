@@ -103,9 +103,9 @@ public class CommoditiesList extends JFrame {
         c.add(btn_queryrecord);
 
 
-        JButton btn_querytCommodity = new JButton("查询");
-        btn_querytCommodity.setBounds(30,120,100,30);
-        c.add(btn_querytCommodity);
+//        JButton btn_querytCommodity = new JButton("查询");
+//        btn_querytCommodity.setBounds(30,120,100,30);
+//        c.add(btn_querytCommodity);
 
         JButton btn_insertCommodity = new JButton("插入");
         btn_insertCommodity.setBounds(150,120,100,30);
@@ -208,11 +208,11 @@ public class CommoditiesList extends JFrame {
             }
         });
 
-        btn_querytCommodity.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
+//        btn_querytCommodity.addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent e) {
+//
+//            }
+//        });
 
         btn_insertCommodity.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -220,9 +220,12 @@ public class CommoditiesList extends JFrame {
                 try {
                     System.out.println(sql);
                     SqlServerHelper.st.execute(sql);
+                    JOptionPane.showMessageDialog(null,"插入成功");
+
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
+                JOptionPane.showMessageDialog(null,"插入成功");
             }
         });
 
@@ -231,6 +234,8 @@ public class CommoditiesList extends JFrame {
                 String sql = DeleteDao.deleteCommodity(textField_cname.getText());
                 try {
                     SqlServerHelper.st.execute(sql);
+                    JOptionPane.showMessageDialog(null,"删除成功");
+
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }

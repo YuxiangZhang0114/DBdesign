@@ -99,9 +99,9 @@ public class WarehouseList extends JFrame {
         btn_queryrecord.setBounds(390,20,100,30);
         c.add(btn_queryrecord);
 
-        JButton btn_querytWarehouse = new JButton("查询");
-        btn_querytWarehouse.setBounds(30,120,100,30);
-        c.add(btn_querytWarehouse);
+//        JButton btn_querytWarehouse = new JButton("查询");
+//        btn_querytWarehouse.setBounds(30,120,100,30);
+//        c.add(btn_querytWarehouse);
 
         JButton btn_insertWarehouse = new JButton("插入");
         btn_insertWarehouse.setBounds(150,120,100,30);
@@ -182,12 +182,12 @@ public class WarehouseList extends JFrame {
                 }
             }
         });
-
-        btn_querytWarehouse.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
+//
+//        btn_querytWarehouse.addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent e) {
+//
+//            }
+//        });
 
         btn_insertWarehouse.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -195,6 +195,8 @@ public class WarehouseList extends JFrame {
                 try {
                     System.out.println(sql);
                     SqlServerHelper.st.execute(sql);
+                    JOptionPane.showMessageDialog(null,"插入成功");
+
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
@@ -206,12 +208,14 @@ public class WarehouseList extends JFrame {
 
                 try {
                     SqlServerHelper.st.execute(sql);
+                    JOptionPane.showMessageDialog(null,"删除成功");
+
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
             }
         });
-        
+
         btn_sell.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 new SellUI(new Point(getLocation().x+getWidth()+1,getLocation().y),new Dimension(400,getHeight()),username);

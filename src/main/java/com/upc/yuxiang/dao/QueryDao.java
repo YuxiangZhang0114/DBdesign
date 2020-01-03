@@ -3,6 +3,8 @@ package com.upc.yuxiang.dao;
 import com.sun.org.apache.xerces.internal.util.EntityResolverWrapper;
 import com.upc.yuxiang.config.SqlServerHelper;
 
+import java.sql.Statement;
+
 public class QueryDao {
 
     public static String getQuerycommodities(){
@@ -15,7 +17,7 @@ public class QueryDao {
     }
 
     public static String getQueryAdmins(String userName){
-        String str = "select Pid,Pname,pwd from managesystem.Persons where Pname = '%s' ";
+        String str = "select Pid,Pname,pwd from managesystem.Persons where Pname = N'%s' ";
         return String.format(str, userName);
     }
     public static String getQueryDomains(){
@@ -46,6 +48,11 @@ public class QueryDao {
         String str = "select o.OType otype, o.Onum onum, p.Pname pname,w.Wname wname,c.cid cid,c.Cname cname,o.Date date,p.Pname pname,d.Dname dname " +
                 " from managesystem.Operations o, managesystem.Commodities c,managesystem.Warehouses w, managesystem.Persons p, managesystem.Domains d " +
                 " where o.Pid = p.Pid and o.Cid = c.Cid and c.Did =d.Did and o.Wid = w.Wid";
+        return str;
+    }
+
+    public static String getQuertInventory(){
+        String str = "select y.Cname Cname, z.Wname Wname, x.Cnum Cnum from  managesystem.Inventory x, managesystem.Commodities y,managesystem.Warehouses z where x.Cid = y.Cid and x.Wid = z.Wid";
         return str;
     }
 

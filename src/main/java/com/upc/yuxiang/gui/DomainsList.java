@@ -92,11 +92,11 @@ public class DomainsList extends JFrame {
         btn_queryrecord.setBounds(390,20,100,30);
         c.add(btn_queryrecord);
 
-
-
-        JButton btn_querytDomain = new JButton("查询");
-        btn_querytDomain.setBounds(30,120,100,30);
-        c.add(btn_querytDomain);
+//
+//
+//        JButton btn_querytDomain = new JButton("查询");
+//        btn_querytDomain.setBounds(30,120,100,30);
+//        c.add(btn_querytDomain);
 
         JButton btn_insertDomain = new JButton("插入");
         btn_insertDomain.setBounds(150,120,100,30);
@@ -117,6 +117,15 @@ public class DomainsList extends JFrame {
         //end 按钮
         c.add(jscrollpane);
 
+
+//        label
+        JLabel label_wid = new JLabel("领域编号");
+
+        label_wid.setBounds(80,50,150,32);
+
+        c.add(label_wid);
+
+//        end label
         //textField
 
         final JTextField textField_dname = new JTextField();
@@ -177,18 +186,20 @@ public class DomainsList extends JFrame {
         });
 
 
-
-        btn_querytDomain.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
+//
+//        btn_querytDomain.addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent e) {
+//
+//            }
+//        });
 
         btn_insertDomain.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String sql = InsertDao.getInsertDomains(textField_dname.getText());
                 try {
                     SqlServerHelper.st.execute(sql);
+                    JOptionPane.showMessageDialog(null,"插入成功");
+
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
@@ -198,8 +209,11 @@ public class DomainsList extends JFrame {
         btn_deleteDomain.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String sql = DeleteDao.deleteDomain(textField_dname.getText());
+                System.out.println(sql);
                 try {
                     SqlServerHelper.st.execute(sql);
+                    JOptionPane.showMessageDialog(null,"删除成功");
+
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }

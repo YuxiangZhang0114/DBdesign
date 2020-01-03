@@ -42,6 +42,12 @@ public class ManageGui extends JFrame {
         btn_in.setBounds(550,70,130,45);
         c.add(btn_in);
 
+        JButton btn_inventory = new JButton("库存情况");
+        btn_inventory.setBounds(385,70,110,40);
+        c.add(btn_inventory);
+
+
+
 
         //label
 
@@ -116,6 +122,17 @@ public class ManageGui extends JFrame {
         btn_in.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
+            }
+        });
+
+
+        btn_inventory.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new InventoryGui(new Point(getX(),getY()-300),new Dimension(getWidth(),300),username);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 
