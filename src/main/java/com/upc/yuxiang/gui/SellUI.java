@@ -1,5 +1,6 @@
 package com.upc.yuxiang.gui;
 
+import com.sun.org.apache.bcel.internal.generic.DSTORE;
 import com.upc.yuxiang.config.SqlServerHelper;
 import com.upc.yuxiang.dao.InsertDao;
 import com.upc.yuxiang.dao.QueryDao;
@@ -180,36 +181,43 @@ public class SellUI extends JFrame {
                     //tring OType, String Cid, String Onum,String Wid
                     String sql = InsertDao.getInsertOutRecord( data.get(i).cid, data.get(i).onum,data.get(i).pid,data.get(i).wid);
                     System.out.println(sql);
+                    boolean t =true;
                     try {
                         SqlServerHelper.st.execute(sql);
-                        String[][] dataArray = new String[1][4];
-
-                        for(int j=0;j<data.size();j++){
-                            dataArray[j][0] = data.get(j).cid;
-                            dataArray[j][1] = data.get(j).wid;
-                            dataArray[j][2] = data.get(j).onum;
-                            dataArray[j][3] = data.get(j).pid;
-
-
-                        }
-                        String[] columnNames = {"商品编号","仓库编号","操作数量","操作人编号"};
-//        setBounds(450,300,800,600);
-                        final JTable table_selled = new JTable(dataArray,columnNames);
-//        FitTableColumns(table_selled);
-                        JScrollPane jscrollpane = new JScrollPane(table_selled);
-
-                        jscrollpane.setViewportView(table_selled);
-
-                        jscrollpane.setBounds(30,150,360,400);
-
-                        table_selled.setGridColor(Color.gray);
-                        table_selled.setRowHeight(26);
-                        Container c = getContentPane();
-                        c.add(jscrollpane);
-
+                        t = false;
                     } catch (SQLException ex) {
                         ex.printStackTrace();
+
                     }
+
+                    if(t){
+                        return;
+                    }
+                    data.clear();
+                    String[][] dataArray = new String[1][4];
+                    for(int j=0;j<data.size();j++){
+                        dataArray[j][0] = data.get(j).cid;
+                        dataArray[j][1] = data.get(j).wid;
+                        dataArray[j][2] = data.get(j).onum;
+                        dataArray[j][3] = data.get(j).pid;
+
+
+                    }
+                    String[] columnNames = {"商品编号","仓库编号","操作数量","操作人编号"};
+//        setBounds(450,300,800,600);
+                    final JTable table_selled = new JTable(dataArray,columnNames);
+//        FitTableColumns(table_selled);
+                    JScrollPane jscrollpane = new JScrollPane(table_selled);
+
+                    jscrollpane.setViewportView(table_selled);
+
+                    jscrollpane.setBounds(30,150,360,400);
+
+                    table_selled.setGridColor(Color.gray);
+                    table_selled.setRowHeight(26);
+                    Container c = getContentPane();
+                    c.add(jscrollpane);
+
 
                 }
             }

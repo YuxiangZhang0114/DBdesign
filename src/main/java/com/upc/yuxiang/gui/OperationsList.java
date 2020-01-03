@@ -195,6 +195,15 @@ public class OperationsList extends JFrame {
 
             }
         });
+
+        btn_in.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new InUI(new Point(getLocation().x-449,getLocation().y),new Dimension(450,getHeight()),username);
+
+            }
+        });
+
+
         btn_inventory.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {

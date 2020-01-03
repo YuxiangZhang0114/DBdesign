@@ -11,14 +11,14 @@ public class InsertDao {
         String str = "insert into managesystem.Warehouses values(N'%s')";
         return String.format(str, Wname);
     }
-    public static String getInsertOutRecord(String Cid, String Onum,String Wid,String Pid){
+    public static String getInsertOutRecord(String Cid, String Onum,String Pid,String Wid){
         String str = "insert into managesystem.Operations values (N'out',%s,%s,SYSDATETIME(),%s,%s);";
-        return String.format(str, Cid, Onum, Pid,Wid);
+        return String.format(str, Cid, Onum,Pid, Wid);
     }
-//    public static String getInsertInRecord(String OType, int Cid, int Onum,int Wid){
-//        String str = "insert into managesystem.Operations values (N'in',%d,%d,SYSDATETIME(),%d,%d);";
-//        return String.format(str, OType, Cid, Onum, Wid);
-//    }
+    public static String getInsertInRecord(String Cid, String Onum,String Pid,String Wid){
+        String str = "insert into managesystem.Operations values (N'in',%s,%s,SYSDATETIME(),%s,%s);";
+        return String.format(str, Cid, Onum,Pid, Wid);
+    }
     public static String getInsertDomains(String Dname){
         String str = "insert into managesystem.Domains values(N'%s')";
         return String.format(str, Dname);

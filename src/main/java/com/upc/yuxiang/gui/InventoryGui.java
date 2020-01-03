@@ -45,7 +45,7 @@ public class InventoryGui extends JFrame {
 
     Vector<Row2> getData2() throws SQLException {
         Vector<Row2> v = new Vector<Row2>();
-        String sql = QueryDao.getQuertInventory();
+        String sql = QueryDao.getQuertAllInventory();
 
         ResultSet rs = SqlServerHelper.st.executeQuery(sql);
 
@@ -97,13 +97,12 @@ public class InventoryGui extends JFrame {
 
         //table 2
 
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         String[] columnNames2 =
                 {"商品名称","储存总量" };
         Vector<Row2> data2 = getData2();
         String[][] dataArray2 = new String[data2.size()][2];
 
-        for(int i=0;i<data.size();i++){
+        for(int i=0;i<data2.size();i++){
             dataArray2[i][0] = data2.get(i).cname;
 
             dataArray2[i][1] = data2.get(i).num;
