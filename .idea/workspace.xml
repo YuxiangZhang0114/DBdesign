@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8fc776-166d-44e4-97f6-b5349be4f94d" name="Default Changelist" comment="some new gui demo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/InventoryGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13/storage_v2/_src_/database/TestDB.sFwclQ/schema/managesystem.1K9STA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dcf9643f-567f-4c7e-8b4f-4d9bfc115b13/storage_v2/_src_/database/TestDB.sFwclQ/schema/managesystem.1K9STA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/DeleteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/DeleteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/DBController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/controller/DBController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/InsertDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/dao/QueryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/CommoditiesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/DomainsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/DomainsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/InventoryGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/InventoryGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/ManageGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/OperationsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/OperationsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/SellUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/SellUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/WarehouseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upc/yuxiang/gui/WarehouseList.java" afterDir="false" />
     </list>
@@ -214,11 +214,6 @@
                 <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@70bc2849" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:TestDB@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@5673e32e" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -240,7 +235,7 @@
       <workItem from="1577608993302" duration="25573000" />
       <workItem from="1577750377395" duration="5119000" />
       <workItem from="1577755875575" duration="48138000" />
-      <workItem from="1577959928978" duration="13608000" />
+      <workItem from="1577959928978" duration="20126000" />
     </task>
     <task id="LOCAL-00001" summary="some new gui demo">
       <created>1577756604076</created>
@@ -311,22 +306,22 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="339" y="132" key="CommitChangelistDialog2/0.23.1792.1017@0.23.1792.1017" timestamp="1577967924741" />
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1578017286552">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom" timestamp="1578032755054">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1578017286552" />
-    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1578017286551">
+    <state width="1750" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1578032755054" />
+    <state width="1750" height="276" key="GridCell.Tab.0.center" timestamp="1578032755053">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1578017286551" />
-    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1578017286551">
+    <state width="1750" height="276" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1578032755053" />
+    <state width="1750" height="276" key="GridCell.Tab.0.left" timestamp="1578032755053">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1578017286551" />
-    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1578017286552">
+    <state width="1750" height="276" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1578032755053" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right" timestamp="1578032755054">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1578017286552" />
+    <state width="1750" height="276" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1578032755054" />
     <state width="1750" height="341" key="GridCell.Tab.1.bottom" timestamp="1577972349479">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
@@ -391,9 +386,9 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="561" y="246" width="670" height="675" key="run.anything.popup/0.23.1792.1017@0.23.1792.1017" timestamp="1577664334171" />
-    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup" timestamp="1577957070473">
+    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup" timestamp="1578032727613">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
-    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1792.1017@0.23.1792.1017" timestamp="1577957070473" />
+    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1792.1017@0.23.1792.1017" timestamp="1578032727613" />
   </component>
 </project>

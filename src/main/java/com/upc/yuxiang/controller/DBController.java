@@ -16,14 +16,14 @@ public class DBController {
         SqlServerHelper.st.execute(InsertDao.getInsertWarehouse(Wname));
         return true;
     }
-    public static Boolean insertOutRecord(String OType, int Cid, int Onum,int Wid) throws SQLException {
+    public static Boolean insertOutRecord(String OType, String Cid, String Onum,String Wid) throws SQLException {
         SqlServerHelper.st.execute(InsertDao.getInsertOutRecord(OType, Cid, Onum, Wid));
         return true;
     }
-    public static Boolean insertinRecord(String OType, int Cid, int Onum,int Wid) throws SQLException {
-        SqlServerHelper.st.execute(InsertDao.getInsertInRecord(OType, Cid, Onum, Wid));
-        return true;
-    }
+//    public static Boolean insertinRecord(String OType, int Cid, int Onum,int Wid) throws SQLException {
+//        SqlServerHelper.st.execute(InsertDao.getInsertInRecord(OType, Cid, Onum, Wid));
+//        return true;
+//    }
 
 
 

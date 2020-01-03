@@ -114,16 +114,29 @@ public class DomainsList extends JFrame {
         btn_in.setBounds(550,70,130,45);
         c.add(btn_in);
 
+        JButton btn_inventory = new JButton("库存情况");
+        btn_inventory.setBounds(385,70,110,40);
+        c.add(btn_inventory);
+
+
         //end 按钮
         c.add(jscrollpane);
 
 
 //        label
         JLabel label_wid = new JLabel("领域编号");
-
         label_wid.setBounds(80,50,150,32);
-
         c.add(label_wid);
+
+
+        JLabel label_username1 = new JLabel("当前用户：");
+        label_username1.setBounds(690,20,90,35);
+        c.add(label_username1);
+
+        JLabel label_username2 = new JLabel(username);
+        label_username2.setBounds(700,60,90,35);
+
+        c.add(label_username2);
 
 //        end label
         //textField
@@ -223,6 +236,16 @@ public class DomainsList extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 new SellUI(new Point(getLocation().x+getWidth()+1,getLocation().y),new Dimension(400,getHeight()),username);
 
+            }
+        });
+
+        btn_inventory.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new InventoryGui(new Point(getX(),getY()-302),new Dimension(getWidth(),300),username);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 

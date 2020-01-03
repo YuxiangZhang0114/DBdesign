@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class ManageGui extends JFrame {
 
     ManageGui(final String username){
-        setBounds(440,290,800,600);
+        setBounds(440,320,800,600);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setTitle("商店进销存管理系统");
         Container c = getContentPane();
@@ -130,7 +130,7 @@ public class ManageGui extends JFrame {
         btn_inventory.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
-                    new InventoryGui(new Point(getX(),getY()-300),new Dimension(getWidth(),300),username);
+                    new InventoryGui(new Point(getX(),getY()-302),new Dimension(getWidth(),300),username);
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }

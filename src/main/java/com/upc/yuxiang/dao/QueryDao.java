@@ -55,7 +55,10 @@ public class QueryDao {
         String str = "select y.Cname Cname, z.Wname Wname, x.Cnum Cnum from  managesystem.Inventory x, managesystem.Commodities y,managesystem.Warehouses z where x.Cid = y.Cid and x.Wid = z.Wid";
         return str;
     }
-
+    public static String getQuertAllInventory(){
+        String str = "select x.Cid Cid, y.Cname Cname, Cnum from managesystem.Total_inv x,managesystem.Commodities y where x.Cid = y.Cid";
+        return str;
+    }
 
 //    public static
     public static void main(String[] args) {
