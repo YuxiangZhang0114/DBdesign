@@ -143,6 +143,10 @@ public class InUI extends JFrame {
                 t.onum = textField_num.getText();
                 t.pid = userid;
                 t.wid = textField_wid.getText();
+                if(t.cid.equals("")||t.onum.equals("")||t.wid.equals("")){
+                    JOptionPane.showMessageDialog(null,"不能为空");
+                    return;
+                }
                 data.add(t);
                 textField_cid.setText("");
                 textField_num.setText("");

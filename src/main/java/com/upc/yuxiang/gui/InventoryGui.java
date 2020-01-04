@@ -99,7 +99,7 @@ public class InventoryGui extends JFrame {
 
         String[] columnNames2 =
                 {"商品名称","储存总量" };
-        Vector<Row2> data2 = getData2();
+          Vector<Row2> data2 = getData2();
         String[][] dataArray2 = new String[data2.size()][2];
 
         for(int i=0;i<data2.size();i++){

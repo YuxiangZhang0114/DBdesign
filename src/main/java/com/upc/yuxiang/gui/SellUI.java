@@ -139,15 +139,23 @@ public class SellUI extends JFrame {
 
         btn_add.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+
                 Row t = new Row();
                 t.cid = textField_cid.getText();
                 t.onum = textField_num.getText();
                 t.pid = userid;
                 t.wid = textField_wid.getText();
+                if(t.cid.equals("")||t.onum.equals("")||t.wid.equals("")){
+                    JOptionPane.showMessageDialog(null,"不能为空");
+                    return;
+                }
                 data.add(t);
+
                 textField_cid.setText("");
                 textField_num.setText("");
                 textField_wid.setText("");
+
+
 
                 String[][] dataArray = new String[data.size()][4];
 
@@ -181,7 +189,7 @@ public class SellUI extends JFrame {
                 for(int i =0;i<data.size();i++){
                     //tring OType, String Cid, String Onum,String Wid
                     String sql = InsertDao.getInsertOutRecord( data.get(i).cid, data.get(i).onum,data.get(i).pid,data.get(i).wid);
-                    System.out.println(sql);
+
                     boolean t =true;
                     try {
                         SqlServerHelper.st.execute(sql);

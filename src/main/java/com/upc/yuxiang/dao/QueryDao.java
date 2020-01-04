@@ -38,13 +38,6 @@ public class QueryDao {
     }
 
     public static String getQueryRecords(){
-        //        String otype;
-//        String cid;
-//        String cname;
-//        String dname;
-//        String wname;
-//        String date;
-//        String pname;
         String str = "select o.OType otype, o.Onum onum, p.Pname pname,w.Wname wname,c.cid cid,c.Cname cname,o.Date date,p.Pname pname,d.Dname dname " +
                 " from managesystem.Operations o, managesystem.Commodities c,managesystem.Warehouses w, managesystem.Persons p, managesystem.Domains d " +
                 " where o.Pid = p.Pid and o.Cid = c.Cid and c.Did =d.Did and o.Wid = w.Wid";
